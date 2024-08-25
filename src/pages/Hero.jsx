@@ -21,12 +21,12 @@ export const Hero = () => {
       </div>
 
       <div className="relative bottom-24 left-0 w-full flex flex-col items-center p-2 md:p-6 py-10">
-        <div className="bg-white bg-opacity-75 pt-2 px-20 rounded-xl shadow-lg text-center">
+        <div className="bg-[#7B7643] text-white bg-opacity-75 pt-2 px-20 rounded-t-2xl shadow-lg text-center">
           <h5 className="text-2xl font-semibold mb-4">Painters</h5>
         </div>
 
-        <div className="bg-red-300 bg-opacity-75 rounded-lg shadow-lg w-full md:max-w-4xl text-center p-3 md:p-5">
-          <div className="flex gap-2 md:gap-5 text-xs md:text-2xl">
+        <div className="bg-white/80 bg-opacity-75 rounded-lg shadow-lg w-full md:max-w-5xl text-center p-3 md:p-8">
+          <div className="flex gap-2 md:gap-7 text-xs md:text-2xl">
             <a href="index.html" className="block hover:text-gray-400">Leonardo Da Vinci</a>
             <a href="2-vincent.html" className="block hover:text-gray-400">Vincent Van Gogh</a>
             <a href="3-pablopicasso.html" className="block hover:text-gray-400">Pablo Picasso</a>
