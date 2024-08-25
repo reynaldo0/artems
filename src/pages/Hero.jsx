@@ -1,5 +1,5 @@
-import React from 'react';
-import backgroundImg from '/leonardp.png';
+import React from "react";
+import backgroundImg from "/leonardp.png";
 
 export const Hero = () => {
   return (
@@ -12,10 +12,28 @@ export const Hero = () => {
       <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-white/90 to-transparent"></div>
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-4">
-        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold">The Painters symphony</h1>
-        <p className="mt-3 text-lg md:text-xl">Discover the World of Painters and Their Artistic Masterpieces.
+        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold">
+          The Painters Symphony
+        </h1>
+        <p className="mt-3 text-lg md:text-xl">
+          Discover the World of Painters and Their Artistic Masterpieces.
+        </p>
+      </div>
 
-</p>
+      <div className="relative bottom-24 left-0 w-full flex flex-col items-center p-2 md:p-6 py-10">
+        <div className="bg-white bg-opacity-75 pt-2 px-20 rounded-xl shadow-lg text-center">
+          <h5 className="text-2xl font-semibold mb-4">Painters</h5>
+        </div>
+
+        <div className="bg-red-300 bg-opacity-75 rounded-lg shadow-lg w-full md:max-w-4xl text-center p-3 md:p-5">
+          <div className="flex gap-2 md:gap-5 text-xs md:text-2xl">
+            <a href="index.html" className="block hover:text-gray-400">Leonardo Da Vinci</a>
+            <a href="2-vincent.html" className="block hover:text-gray-400">Vincent Van Gogh</a>
+            <a href="3-pablopicasso.html" className="block hover:text-gray-400">Pablo Picasso</a>
+            <a href="4-michaelangelo.html" className="block hover:text-gray-400">Michaelangelo Buonarroti</a>
+            <a href="5-salvador.html" className="block hover:text-gray-400">Salvador Dali</a>
+          </div>
+        </div>
       </div>
     </div>
   );
