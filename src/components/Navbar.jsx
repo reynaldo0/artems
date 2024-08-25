@@ -42,8 +42,8 @@ const Navbar = () => {
         isVisible && !isScrolling ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
       }`}
     >
-      <div className="flex items-center justify-between rounded-full p-[2px] bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-md">
-        <div className="flex items-center space-x-4 bg-gray-900/50 rounded-full px-4 py-1">
+      <div className="flex items-center justify-between rounded-full p-[2px] bg-gradient-to-r from-primary/50 to-primary/10 backdrop-blur-md">
+        <div className="flex items-center space-x-4 bg-primary/50 rounded-full px-4 py-1">
           <div className="flex items-center justify-center w-10 h-10">
             <img src={logoImg} alt="Logo" className="w-8 h-8 object-contain" />
           </div>
@@ -76,7 +76,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <a
               href="#3d"
-              className="bg-gray-700 text-white px-3 py-1 rounded-full hover:bg-yellow-500 transition-all duration-300"
+              className="bg-primary/100 text-white px-3 py-1 rounded-full hover:bg-yellow-500 transition-all duration-300"
             >
               3D
             </a>

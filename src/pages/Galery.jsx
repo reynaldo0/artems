@@ -12,7 +12,7 @@ const Galery = () => {
               alt="Mona Lisa"
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
-              <p className="text-white text-sm sm:text-lg md:text-xl">Mona Lisa</p>
+              <p className="text-white text-3xl md:text-6xl">Mona Lisa</p>
             </div>
           </div>
           <div className="relative w-full h-48 sm:h-60 md:h-80 overflow-hidden rounded-3xl group">
@@ -22,7 +22,7 @@ const Galery = () => {
               alt="The Last Supper"
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
-              <p className="text-white text-sm sm:text-lg md:text-xl">The Last Supper</p>
+              <p className="text-white text-3xl md:text-6xl text-center">The Last Supper</p>
             </div>
           </div>
         </div>
@@ -35,7 +35,7 @@ const Galery = () => {
               alt="Leonardo Da Vinci"
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 rounded-3xl">
-              <p className="text-white text-sm sm:text-lg md:text-xl">Leonardo Da Vinci</p>
+              <p className="text-white text-3xl md:text-6xl text-center">Leonardo Da Vinci</p>
             </div>
           </div>
         </div>
