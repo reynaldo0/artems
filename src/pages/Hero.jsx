@@ -27,14 +27,31 @@ export const Hero = () => {
 
         <div className="bg-white/80 text-primary bg-opacity-75 rounded-lg shadow-lg w-full md:max-w-5xl text-center p-3 md:p-8">
           <div className="flex gap-2 md:gap-7 text-xs md:text-2xl">
-            <a href="index.html" className="block hover:text-primary/80">Leonardo Da Vinci</a>
-            <a href="2-vincent.html" className="block hover:text-primary/80">Vincent Van Gogh</a>
-            <a href="3-pablopicasso.html" className="block hover:text-primary/80">Pablo Picasso</a>
-            <a href="4-michaelangelo.html" className="block hover:text-primary/80">Michaelangelo Buonarroti</a>
-            <a href="5-salvador.html" className="block hover:text-primary/80">Salvador Dali</a>
+            <a href="index.html" className="block hover:text-primary/80">
+              Leonardo Da Vinci
+            </a>
+            <a href="2-vincent.html" className="block hover:text-primary/80">
+              Vincent Van Gogh
+            </a>
+            <a
+              href="3-pablopicasso.html"
+              className="block hover:text-primary/80"
+            >
+              Pablo Picasso
+            </a>
+            <a
+              href="4-michaelangelo.html"
+              className="block hover:text-primary/80"
+            >
+              Michaelangelo Buonarroti
+            </a>
+            <a href="5-salvador.html" className="block hover:text-primary/80">
+              Salvador Dali
+            </a>
           </div>
         </div>
       </div>
+      
     </div>
   );
 };
