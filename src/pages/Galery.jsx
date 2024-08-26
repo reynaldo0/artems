@@ -3,7 +3,7 @@ import React from "react";
 const Galery = () => {
   return (
     <div className="relative max-w-6xl mx-auto py-24 md:py-52 w-full flex flex-col items-center px-4 md:px-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full">
         <div className="flex flex-col gap-8">
           <div className="relative w-full h-48 sm:h-60 md:h-80 overflow-hidden rounded-3xl group">
             <img
@@ -12,7 +12,7 @@ const Galery = () => {
               alt="Mona Lisa"
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
-              <p className="text-white text-3xl md:text-6xl">Mona Lisa</p>
+              <p className="text-white text-3xl md:text-5xl">Mona Lisa</p>
             </div>
           </div>
           <div className="relative w-full h-48 sm:h-60 md:h-80 overflow-hidden rounded-3xl group">
@@ -35,7 +35,7 @@ const Galery = () => {
               alt="Leonardo Da Vinci"
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 rounded-3xl">
-              <p className="text-white text-3xl md:text-6xl text-center">Leonardo Da Vinci</p>
+              <p className="text-white text-3xl md:text-5xl text-center">Leonardo Da Vinci</p>
             </div>
           </div>
         </div>
