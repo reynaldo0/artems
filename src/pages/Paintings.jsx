@@ -1,7 +1,11 @@
 import React from 'react'
+import Card from '../components/Card'
+import CardLeo from '../docs/CardLeo'
 
 const Paintings = () => {
+    
     return (
+        
         <div className="relative max-w-screen-2xl mx-auto py-24 md:py-36 w-full flex flex-col items-center px-5">
             <div className="text-center">
                 <p className="text-primary text-2xl">Leonardo Da Vinci</p>
@@ -28,6 +32,16 @@ const Paintings = () => {
                         </a>
                     </div>
                 </div>
+            </div>
+            <div className="flex flex-wrap gap-5">
+                {CardLeo.map((data, index) => (
+                    <Card
+                        key={index}
+                        title={data.title}
+                        description={data.description}
+                        image={data.image}
+                    />
+                ))}
             </div>
         </div>
     )
