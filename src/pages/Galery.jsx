@@ -1,11 +1,12 @@
 import React from "react";
 
-const Galery = () => {
+const Gallery = () => {
   return (
-    <div className="relative max-w-6xl mx-auto py-24 md:py-52 w-full flex flex-col items-center px-4 md:px-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full">
+    <div className="relative max-w-screen-2xl mx-auto py-24 md:py-52 w-full flex flex-col items-center px-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 w-full">
+        {/* Column 1: Two landscape images stacked vertically */}
         <div className="flex flex-col gap-8">
-          <div className="relative w-full h-48 sm:h-60 md:h-80 overflow-hidden rounded-3xl group">
+          <div className="relative w-full md:w-72 h-48 sm:h-60 md:h-60 overflow-hidden rounded-3xl group">
             <img
               src="/monalisa.png"
               className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-105"
@@ -15,7 +16,7 @@ const Galery = () => {
               <p className="text-white text-3xl md:text-5xl">Mona Lisa</p>
             </div>
           </div>
-          <div className="relative w-full h-48 sm:h-60 md:h-80 overflow-hidden rounded-3xl group">
+          <div className="relative w-full md:w-72 h-48 sm:h-60 md:h-60 overflow-hidden rounded-3xl group">
             <img
               src="/supper.png"
               className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-105"
@@ -27,16 +28,26 @@ const Galery = () => {
           </div>
         </div>
 
-        <div className="relative flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1 group">
-          <div className="relative w-full h-60 sm:h-80 md:h-[320px] lg:h-[680px] flex items-center justify-center overflow-hidden rounded-3xl group">
+        {/* Column 2: Portrait image with text */}
+        <div className="relative md:absolute md:left-[21rem] flex flex-col md:flex-row  col-span-1 mt-10 md:mt-0">
+          <div className="relative w-full md:w-80 h-60 md:h-full overflow-hidden rounded-3xl group">
             <img
               src="/leonardo.png"
               className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-105"
               alt="Leonardo Da Vinci"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 rounded-3xl">
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
               <p className="text-white text-3xl md:text-5xl text-center">Leonardo Da Vinci</p>
             </div>
+          </div>
+
+          {/* Text beside portrait image */}
+          <div className="flex flex-col pt-5 md:pt-20 md:pl-16 w-full md:w-3/5">
+            <h2 className="text-3xl font-bold mb-4 md:text-7xl">Leonardo
+            Da Vinci</h2>
+            <p className="text-lg md:text-xl text-gray-600">
+              This gallery features some of the most renowned artworks including the Mona Lisa, The Last Supper, and works by Leonardo Da Vinci. Each piece is a masterpiece with its unique history and significance in the art world.
+            </p>
           </div>
         </div>
       </div>
@@ -44,4 +55,4 @@ const Galery = () => {
   );
 };
 
-export default Galery;
+export default Gallery;
