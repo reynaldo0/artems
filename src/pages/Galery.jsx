@@ -30,7 +30,7 @@ const Gallery = () => {
         <div className="relative md:absolute md:left-[21rem] flex flex-col md:flex-row col-span-1 mt-10 md:mt-0">
           <div className="relative w-full md:w-80 h-60 md:h-full overflow-hidden rounded-3xl group">
             <img
-              src="/leonardo.pg"
+              src="/leonardo.png"
               className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-105"
               alt="Leonardo Da Vinci"
             />
