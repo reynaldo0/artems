@@ -8,7 +8,6 @@
   -moz-box-shadow: 1px 4px 29px -6px rgba(0, 0, 0, 0.25);
 }
 
-/* styles.css or your CSS file */
 .expand-transition {
   transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
@@ -20,6 +19,6 @@
 }
 
 .expanded {
-  max-height: 200px; /* Adjust based on the height needed for your content */
+  max-height: 200px;
   opacity: 1;
 }

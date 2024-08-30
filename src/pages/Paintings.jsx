@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
-import Card from '../components/Card'
-import CardLeo from '../docs/CardLeo'
+import React, { useState } from 'react';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import Card from '../components/Card';
+import CardLeo from '../docs/CardLeo';
 
 const Paintings = () => {
     const [selectedYear, setSelectedYear] = useState('1470s');
@@ -16,25 +17,25 @@ const Paintings = () => {
                     <div className="flex gap-5 justify-center md:gap-16 text-lg md:text-2xl">
                         <button
                             onClick={() => setSelectedYear('1470s')}
-                            className={`block ${selectedYear === '1470s' ? 'text-primary/80' : 'hover:text-primary/80'}`}
+                            className={`py-2 px-4 border-none cursor-pointer transition-colors duration-300 ease-in-out ${selectedYear === '1470s' ? 'bg-primary text-white' : 'bg-transparent hover:bg-gray-200'}`}
                         >
                             1470s
                         </button>
                         <button
                             onClick={() => setSelectedYear('1480s')}
-                            className={`block ${selectedYear === '1480s' ? 'text-primary/80' : 'hover:text-primary/80'}`}
+                            className={`py-2 px-4 border-none cursor-pointer transition-colors duration-300 ease-in-out ${selectedYear === '1480s' ? 'bg-primary text-white' : 'bg-transparent hover:bg-gray-200'}`}
                         >
                             1480s
                         </button>
                         <button
                             onClick={() => setSelectedYear('1490s')}
-                            className={`block ${selectedYear === '1490s' ? 'text-primary/80' : 'hover:text-primary/80'}`}
+                            className={`py-2 px-4 border-none cursor-pointer transition-colors duration-300 ease-in-out ${selectedYear === '1490s' ? 'bg-primary text-white' : 'bg-transparent hover:bg-gray-200'}`}
                         >
                             1490s
                         </button>
                         <button
                             onClick={() => setSelectedYear('1500s')}
-                            className={`block ${selectedYear === '1500s' ? 'text-primary/80' : 'hover:text-primary/80'}`}
+                            className={`py-2 px-4 border-none cursor-pointer transition-colors duration-300 ease-in-out ${selectedYear === '1500s' ? 'bg-primary text-white' : 'bg-transparent hover:bg-gray-200'}`}
                         >
                             1500s
                         </button>
@@ -42,21 +43,28 @@ const Paintings = () => {
                 </div>
             </div>
             <div className="flex flex-wrap gap-5">
-                {filteredCards.length > 0 ? (
-                    filteredCards.map((data, index) => (
-                        <Card
-                            key={index}
-                            title={data.title}
-                            description={data.description}
-                            image={data.image}
-                        />
-                    ))
-                ) : (
-                    <p className="text-gray-500">No paintings available for this decade.</p>
-                )}
+                <TransitionGroup>
+                    {filteredCards.length > 0 ? (
+                        filteredCards.map((data, index) => (
+                            <CSSTransition
+                                key={index}
+                                timeout={500}
+                                classNames="fade"
+                            >
+                                <Card
+                                    title={data.title}
+                                    description={data.description}
+                                    image={data.image}
+                                />
+                            </CSSTransition>
+                        ))
+                    ) : (
+                        <p className="text-gray-500">No paintings available for this decade.</p>
+                    )}
+                </TransitionGroup>
             </div>
         </div>
-    )
+    );
 }
 
-export default Paintings
+export default Paintings;
