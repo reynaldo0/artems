@@ -1,4 +1,3 @@
-// CardLeo.js
 const CardLeo = [
   {
     title: 'Leda And The Swan (1470s)',
