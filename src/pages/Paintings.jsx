@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Card from '../components/Card';
 import CardLeo from '../docs/CardLeo';
 
@@ -43,25 +42,18 @@ const Paintings = () => {
                 </div>
             </div>
             <div className="flex flex-wrap gap-5">
-                <TransitionGroup>
-                    {filteredCards.length > 0 ? (
-                        filteredCards.map((data, index) => (
-                            <CSSTransition
-                                key={index}
-                                timeout={500}
-                                classNames="fade"
-                            >
-                                <Card
-                                    title={data.title}
-                                    description={data.description}
-                                    image={data.image}
-                                />
-                            </CSSTransition>
-                        ))
-                    ) : (
-                        <p className="text-gray-500">No paintings available for this decade.</p>
-                    )}
-                </TransitionGroup>
+                {filteredCards.length > 0 ? (
+                    filteredCards.map((data, index) => (
+                        <Card
+                            key={index}
+                            title={data.title}
+                            description={data.description}
+                            image={data.image}
+                        />
+                    ))
+                ) : (
+                    <p className="text-gray-500">No paintings available for this decade.</p>
+                )}
             </div>
         </div>
     );
