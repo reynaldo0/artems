@@ -23,7 +23,7 @@ const Card = ({ title, description, image }) => {
         </div>
         <button
           onClick={handleReadMoreClick}
-          className="bg-primary text-white py-2 px-4 hover:bg-primary-dark transition-colors duration-300"
+          className="bg-primary text-white py-2 px-4 hover:bg-primary-dark transition-colors duration-300  rounded-lg"
         >
           {isOpen ? 'Read Less' : 'Read More'}
         </button>
