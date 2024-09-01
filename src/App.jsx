@@ -1,3 +1,4 @@
+import ArtTimeline from "./components/ArtTimeline";
 import Navbar from "./components/Navbar";
 import Galery from "./pages/Galery";
 import { Hero } from "./pages/Hero";
@@ -11,6 +12,7 @@ function App() {
       <main >
         <Galery/>
         <Paintings/>
+        <ArtTimeline/>
       </main>
     </>
   );
