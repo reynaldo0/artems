@@ -47,7 +47,7 @@ const Gallery = () => {
             </p>
             <div className="flex flex-row pt-10 md:pt-20 gap-12 md:gap-40">
               <div className="flex flex-col">
-                <p>Bom</p>
+                <p>Born</p>
                 <p className="font-bold text-lg">April 15, 1452</p>
               </div>
               <div className="flex flex-col">
