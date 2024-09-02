@@ -60,7 +60,7 @@ const ArtTimeline = () => {
   }, []);
 
   return (
-    <section className="p-8 bg-gray-50 flex justify-center">
+    <section className="p-8  flex justify-center">
       <div className="max-w-7xl w-full">
         <h2 className="text-3xl font-bold text-center mb-12">Timeline of Art Movements</h2>
         <div className="relative" ref={timelineRef}>
