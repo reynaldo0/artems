@@ -13,20 +13,31 @@ const CanvasPage = () => {
       setWindowWidth(window.innerWidth);
       setWindowHeight(window.innerHeight);
     };
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const canvasWidth = windowWidth < 768 ? windowWidth * 0.9 : 800;
-  const canvasHeight = windowWidth < 768 ? windowHeight * 0.4 : 500; 
+  const canvasHeight = windowWidth < 768 ? windowHeight * 0.4 : 500;
 
   const positionX = windowWidth < 768 ? -0.1 : 0;
 
   return (
     <section className="relative py-10 px-5">
-      <h2 className="text-center text-3xl font-bold mb-6">3D BUKU</h2>
+      <div className="text-center mb-8">
+        <p className="text-primary mb-4 text-xl md:text-2xl">
+          Timeless Canvas:
+        </p>
+        <p className="font-bold text-4xl md:text-6xl lg:text-5xl">
+          Exploring Art History in 3D
+        </p>
+      </div>
+
       <div className="relative">
-        <div className="relative mx-auto w-full" style={{ maxWidth: canvasWidth }}>
+        <div
+          className="relative mx-auto w-full"
+          style={{ maxWidth: canvasWidth }}
+        >
           <Canvas
             shadows
             camera={{ position: [0, 1, 3], fov: 45 }}
