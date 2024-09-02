@@ -14,16 +14,20 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Hero />} />
+        <Route path="/" element={
+          <>
+            <Hero />
+            <main>
+              <Galery />
+              <Paintings />
+              <ArtTimeline />
+              <CanvasPage />
+            </main>
+          </>
+        } />
         <Route path="/vincent" element={<Vincent />} />
         {/* Tambahkan rute untuk halaman lain jika perlu */}
       </Routes>
-        <main>
-          <Galery />
-          <Paintings />
-          <ArtTimeline />
-          <CanvasPage />
-        </main>
     </>
   );
 }
