@@ -1,4 +1,3 @@
-// src/pages/Hero.jsx
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import backgroundImg from "/leonardp.png";

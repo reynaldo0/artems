@@ -1,9 +1,8 @@
-// src/pages/Hero.jsx
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import backgroundImg from "/leonardp.png";
 
-const Hero = () => {
+const Vincent = () => {
   const location = useLocation();
   console.log('Current path:', location.pathname);
 
@@ -89,4 +88,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Vincent;
