@@ -42,7 +42,6 @@ const ArtTimeline = () => {
   useEffect(() => {
     const items = timelineRef.current.querySelectorAll(".timeline-item");
 
-
     gsap.fromTo(
       items,
       { opacity: 0, y: 50 },
@@ -61,31 +60,39 @@ const ArtTimeline = () => {
   }, []);
 
   return (
-    <section className="p-8 bg-gray-50">
-      <h2 className="text-3xl font-bold text-center mb-12">Timeline of Art Movements</h2>
-      <div className="relative" ref={timelineRef}>
+    <section className="p-8 bg-gray-50 flex justify-center">
+      <div className="max-w-7xl w-full">
+        <h2 className="text-3xl font-bold text-center mb-12">Timeline of Art Movements</h2>
+        <div className="relative" ref={timelineRef}>
+          {/* Garis Vertikal */}
+          <div className="absolute h-full w-[2px] bg-[#8b704d] left-1/2 transform -translate-x-1/2"></div>
+          {artMovements.map((movement, index) => (
+            <motion.div
+              key={movement.title}
+              className={`timeline-item relative mb-12 p-6 bg-white shadow-md rounded-lg max-w-[90%] md:max-w-md mx-auto md:mx-0 text-center md:text-left ${
+                index % 2 === 0 ? "md:ml-auto" : "md:mr-auto"
+              }`}
+            >
+              {/* Garis Horizontal */}
+              <div
+                className={`hidden xl:block absolute top-1/2 transform -translate-y-1/2 w-[190px] h-[2px] bg-[#8b704d] ${
+                  index % 2 === 0 ? "right-full mr-[2px]" : "left-full ml-[2px]"
+                }`}
+              ></div>
 
-        <div className="absolute h-full w-1 bg-[#8b704d] left-1/2 transform -translate-x-1/2"></div>
-        {artMovements.map((movement, index) => (
-          <motion.div
-            key={movement.title}
-            className={`timeline-item mb-12 p-6 bg-white shadow-md rounded-lg max-w-md ${
-              index % 2 === 0 ? "ml-auto" : "mr-auto"
-            }`}
-          >
-         
-            <h3 className="text-xl font-semibold text-[#8b704d]">{movement.title}</h3>
-            <p className="text-sm text-gray-500">{movement.period}</p>
-            <p className="mt-2">{movement.description}</p>
-            <ul className="mt-2">
-              {movement.painters.map((painter) => (
-                <li key={painter} className="text-gray-700">
-                  {painter}
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-        ))}
+              <h3 className="text-xl font-semibold text-[#8b704d]">{movement.title}</h3>
+              <p className="text-sm text-gray-500">{movement.period}</p>
+              <p className="mt-2">{movement.description}</p>
+              <ul className="mt-2">
+                {movement.painters.map((painter) => (
+                  <li key={painter} className="text-gray-700">
+                    {painter}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
