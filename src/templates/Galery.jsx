@@ -1,4 +1,3 @@
-// src/pages/Gallery.jsx
 import React from "react";
 import { useLocation } from "react-router-dom";
 import galleryData from "../docs/GalleryData";
@@ -7,7 +6,6 @@ const Gallery = () => {
   const location = useLocation();
   const { pathname } = location;
 
-  // Find the data for the current path
   const currentData = galleryData.find(data => data.path === pathname) || {};
 
   const { images = [], mainImage = {}, description, born, died } = currentData;

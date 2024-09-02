@@ -1,4 +1,3 @@
-// src/heroData.js
 const heroData = [
     {
       path: "/",

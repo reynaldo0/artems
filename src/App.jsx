@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Galery from "./templates/Galery";
 import Paintings from "./pages/Paintings";
 import ArtTimeline from "./components/ArtTimeline";
 import CanvasPage from "./pages/CanvasPage";
@@ -17,7 +16,6 @@ function App() {
           <>
             <Leonardo />
             <main>
-              <Galery />
               <Paintings />
               <ArtTimeline />
               <CanvasPage />

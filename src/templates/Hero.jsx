@@ -1,4 +1,3 @@
-// src/pages/Vincent.jsx
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import heroData from '../docs/HeroData';
@@ -8,7 +7,6 @@ const Hero = () => {
   const { pathname } = location;
   console.log('Current path:', pathname);
 
-  // Find the data for the current path
   const currentData = heroData.find(data => data.path === pathname) || {};
 
   const { image, title, description } = currentData;
