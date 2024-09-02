@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import backgroundImg from "/leonardp.png";
 
 export const Hero = () => {
+  const [activePage, setActivePage] = useState("index.html");
+
   return (
     <div
       className="relative h-screen w-full bg-cover bg-center sm:bg-top md:bg-center"
@@ -21,37 +23,38 @@ export const Hero = () => {
       </div>
 
       <div className="relative bottom-32 md:bottom-40 left-0 w-full flex flex-col items-center p-2 md:p-6 py-10">
-        <div className="bg-primary text-white pt-2 px-20 rounded-t-2xl shadow-lg text-center">
+        <div className="bg-primary text-white pt-2 px-6 md:px-20 rounded-t-2xl shadow-lg text-center">
           <h5 className="text-2xl font-semibold mb-4">Painters</h5>
         </div>
 
         <div className="bg-white/80 text-primary bg-opacity-75 rounded-3xl shadow-lg w-full md:max-w-5xl text-center p-3 md:p-8">
           <div className="flex gap-2 md:gap-7 text-xs md:text-2xl">
-            <a href="index.html" className="block hover:text-primary/80">
-              Leonardo Da Vinci
-            </a>
-            <a href="2-vincent.html" className="block hover:text-primary/80">
-              Vincent Van Gogh
-            </a>
-            <a
-              href="3-pablopicasso.html"
-              className="block hover:text-primary/80"
-            >
-              Pablo Picasso
-            </a>
-            <a
-              href="4-michaelangelo.html"
-              className="block hover:text-primary/80"
-            >
-              Michaelangelo Buonarroti
-            </a>
-            <a href="5-salvador.html" className="block hover:text-primary/80">
-              Salvador Dali
-            </a>
+            {[
+              { href: "index.html", name: "Leonardo Da Vinci" },
+              { href: "2-vincent.html", name: "Vincent Van Gogh" },
+              { href: "3-pablopicasso.html", name: "Pablo Picasso" },
+              {
+                href: "4-michaelangelo.html",
+                name: "Michaelangelo Buonarroti",
+              },
+              { href: "5-salvador.html", name: "Salvador Dali" },
+            ].map(({ href, name }) => (
+              <a
+                key={href}
+                href={href}
+                className={`block py-2 md:px-4 rounded-2xl transition-all duration-300 ${
+                  activePage === href
+                    ? "bg-primary text-white px-2 md:px-10"
+                    : "text-primary hover:bg-gray-200"
+                }`}
+                onClick={() => setActivePage(href)}
+              >
+                {name}
+              </a>
+            ))}
           </div>
         </div>
       </div>
-
     </div>
   );
 };
