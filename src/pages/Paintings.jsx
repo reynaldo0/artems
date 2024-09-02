@@ -12,13 +12,13 @@ const Paintings = () => {
             <div className="text-center mb-12">
                 <p className="text-primary text-xl md:text-2xl">Leonardo Da Vinci</p>
                 <p className="font-bold text-4xl md:text-6xl lg:text-7xl">Paintings</p>
-                <div className="bg-white/80 text-primary bg-opacity-75 rounded-3xl shadow w-full md:max-w-5xl text-center p-1 md:p-5 my-8 md:my-10">
-                    <div className="flex flex-wrap gap-2 py-1 px-3 justify-center md:gap-4 text-sm md:text-lg lg:text-xl">
+                <div className="bg-white/80 text-primary bg-opacity-75 rounded-3xl sedow w-full md:max-w-5xl text-center p-1 md:p-5 my-8 md:my-10">
+                    <div className="flex flex-wrap gap-5 py-1 px-3 justify-center md:gap-16 text-sm md:text-lg lg:text-xl">
                         {['1470s', '1480s', '1490s', '1500s'].map(year => (
                             <button
                                 key={year}
                                 onClick={() => setSelectedYear(year)}
-                                className={`py-2 px-4 border-none cursor-pointer transition-colors duration-300 ease-in-out ${selectedYear === year ? 'bg-primary text-white rounded-lg' : 'bg-transparent rounded-lg hover:bg-gray-300'}`}
+                                className={`py-2 px-2 border-none cursor-pointer transition-colors duration-300 ease-in-out ${selectedYear === year ? 'bg-primary text-white rounded-lg' : 'bg-transparent rounded-lg hover:bg-gray-300'}`}
                             >
                                 {year}
                             </button>
