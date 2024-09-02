@@ -1,4 +1,4 @@
-const CardLeo = [
+const LeonardoPaintings = [
   {
     year: "1470s",
     title: "St. Jerome In The Wilderness (1470)",
@@ -100,4 +100,4 @@ const CardLeo = [
   },
 ];
 
-export default CardLeo;
+export default LeonardoPaintings

@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Paintings from "./pages/Paintings";
+import Paintings from "./templates/Paintings";
 import ArtTimeline from "./components/ArtTimeline";
 import CanvasPage from "./pages/CanvasPage";
 import Vincent from "./pages/Vincent";

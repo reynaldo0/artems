@@ -1,19 +1,17 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
 import Hero from '../templates/Hero';
 import Gallery from '../templates/Galery';
+import Paintings from '../templates/Paintings';
+import leonardoPaintings from '../docs/LeonardoPaintings'; // Import the paintings data for Leonardo
 
 const Leonardo = () => {
-  const location = useLocation();
-  const { pathname } = location;
-
-  return (
-    <div>
-      <Hero/>
-
-      <Gallery/>
-    </div>
-  );
+    return (
+        <div>
+            <Hero /> 
+            <Gallery /> 
+            <Paintings painterData={leonardoPaintings} painterName="Leonardo Da Vinci" />
+        </div>
+    );
 };
 
 export default Leonardo;
