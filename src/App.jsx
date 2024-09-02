@@ -6,6 +6,7 @@ import ArtTimeline from "./components/ArtTimeline";
 import CanvasPage from "./pages/CanvasPage";
 import Vincent from "./pages/Vincent";
 import Leonardo from "./pages/Leonardo";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/vincent" element={<Vincent />} />
         {/* Tambahkan rute untuk halaman lain jika perlu */}
       </Routes>
+      <Footer/>
     </>
   );
 }
