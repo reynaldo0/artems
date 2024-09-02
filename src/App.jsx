@@ -1,26 +1,29 @@
-import { Loader } from "@react-three/drei";
-import ArtTimeline from "./components/ArtTimeline";
-import { UI } from "./components/Models/UI";
-import { Experience } from "./components/Models/Experience";
+// src/App.jsx
+import React from "react";
+import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Hero from "./pages/Hero";
 import Galery from "./pages/Galery";
-import { Hero } from "./pages/Hero";
 import Paintings from "./pages/Paintings";
-import { Canvas } from "@react-three/fiber";
-import { Suspense } from "react";
+import ArtTimeline from "./components/ArtTimeline";
 import CanvasPage from "./pages/CanvasPage";
+import Vincent from "./pages/vincent";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <main>
-        <Galery />
-        <Paintings />
-        <ArtTimeline />
-        <CanvasPage/>
-      </main>
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/vincent" element={<Vincent />} />
+        {/* Tambahkan rute untuk halaman lain jika perlu */}
+      </Routes>
+        <main>
+          <Galery />
+          <Paintings />
+          <ArtTimeline />
+          <CanvasPage />
+        </main>
     </>
   );
 }
