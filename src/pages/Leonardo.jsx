@@ -1,28 +1,15 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import backgroundImg from "/leonardp.png";
+import Hero from '../templates/Hero';
 
-const Hero = () => {
+const Leonardo = () => {
   const location = useLocation();
-  console.log('Current path:', location.pathname);
+  const { pathname } = location;
 
   return (
     <div
-      className="relative h-screen w-full bg-cover bg-center sm:bg-top md:bg-center"
-      style={{ backgroundImage: `url(${backgroundImg})` }}
     >
-      <div className="absolute inset-0 bg-black opacity-50"></div>
-
-      <div className="absolute bottom-0 left-0 w-full h-60 bg-gradient-to-t from-white/90 to-transparent"></div>
-
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-4">
-        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold">
-          The Painters Symphony
-        </h1>
-        <p className="mt-3 text-lg md:text-xl">
-          Discover the World of Painters and Their Artistic Masterpieces.
-        </p>
-      </div>
+      <Hero/>
 
       <div className="relative z-50 bottom-32 md:bottom-40 left-0 w-full flex flex-col items-center p-2 md:p-6 py-10">
         <div className="bg-primary text-white pt-2 px-6 md:px-20 rounded-t-2xl shadow-lg text-center">
@@ -34,7 +21,7 @@ const Hero = () => {
             <Link
               to="/"
               className={`block py-2 md:px-4 rounded-2xl transition-all duration-300 ${
-                location.pathname === "/"
+                pathname === "/"
                   ? "bg-primary text-white px-2 md:px-10"
                   : "text-primary hover:bg-gray-200"
               }`}
@@ -44,7 +31,7 @@ const Hero = () => {
             <Link
               to="/vincent"
               className={`block py-2 md:px-4 rounded-2xl transition-all duration-300 ${
-                location.pathname === "/vincent"
+                pathname === "/vincent"
                   ? "bg-primary text-white px-2 md:px-10"
                   : "text-primary hover:bg-gray-200"
               }`}
@@ -54,7 +41,7 @@ const Hero = () => {
             <Link
               to="/picasso"
               className={`block py-2 md:px-4 rounded-2xl transition-all duration-300 ${
-                location.pathname === "/picasso"
+                pathname === "/picasso"
                   ? "bg-primary text-white px-2 md:px-10"
                   : "text-primary hover:bg-gray-200"
               }`}
@@ -64,7 +51,7 @@ const Hero = () => {
             <Link
               to="/michaelangelo"
               className={`block py-2 md:px-4 rounded-2xl transition-all duration-300 ${
-                location.pathname === "/michaelangelo"
+                pathname === "/michaelangelo"
                   ? "bg-primary text-white px-2 md:px-10"
                   : "text-primary hover:bg-gray-200"
               }`}
@@ -74,7 +61,7 @@ const Hero = () => {
             <Link
               to="/dali"
               className={`block py-2 md:px-4 rounded-2xl transition-all duration-300 ${
-                location.pathname === "/dali"
+                pathname === "/dali"
                   ? "bg-primary text-white px-2 md:px-10"
                   : "text-primary hover:bg-gray-200"
               }`}
@@ -88,4 +75,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Leonardo;

@@ -1,15 +1,35 @@
 // src/pages/Vincent.jsx
-import React from "react";
-import { Link, useLocation } from "react-router-dom";
-import Hero from "../templates/Hero";
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import heroData from '../docs/HeroData';
 
-const Vincent = () => {
+const Hero = () => {
   const location = useLocation();
   const { pathname } = location;
+  console.log('Current path:', pathname);
+
+  // Find the data for the current path
+  const currentData = heroData.find(data => data.path === pathname) || {};
+
+  const { image, title, description } = currentData;
 
   return (
-    <div>
-      <Hero />
+    <div
+      className="relative h-screen w-full bg-cover bg-center sm:bg-top md:bg-center"
+      style={{ backgroundImage: `url(${image})` }}
+    >
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+
+      <div className="absolute bottom-0 left-0 w-full h-60 bg-gradient-to-t from-white/90 to-transparent"></div>
+
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-4">
+        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold">
+          {title}
+        </h1>
+        <p className="mt-3 text-lg md:text-xl">
+          {description}
+        </p>
+      </div>
 
       <div className="relative z-50 bottom-32 md:bottom-40 left-0 w-full flex flex-col items-center p-2 md:p-6 py-10">
         <div className="bg-primary text-white pt-2 px-6 md:px-20 rounded-t-2xl shadow-lg text-center">
@@ -75,4 +95,4 @@ const Vincent = () => {
   );
 };
 
-export default Vincent;
+export default Hero;
