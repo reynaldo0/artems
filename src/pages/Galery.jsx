@@ -4,7 +4,7 @@ const Gallery = () => {
   return (
     <div className="relative max-w-screen-2xl mx-auto py-24 md:py-36 w-full flex flex-col items-center px-5">
       <div className="grid grid-cols-1 md:grid-cols-2 w-full">
-        <div className="flex flex-col gap-8">
+        <div className="flex md:flex-col gap-2 md:gap-8">
           <div className="relative w-full md:w-72 h-48 sm:h-60 md:h-60 overflow-hidden rounded-3xl group sedow">
             <img
               src="/monalisa.png"
@@ -27,7 +27,7 @@ const Gallery = () => {
           </div>
         </div>
 
-        <div className="relative md:absolute md:left-[21rem] flex flex-col md:flex-row col-span-1 mt-10 md:mt-0">
+        <div className="relative md:absolute md:left-[21rem] flex flex-col md:flex-row col-span-1 mt-2 md:mt-0">
           <div className="relative w-full md:w-80 h-60 md:h-full overflow-hidden rounded-3xl group sedow">
             <img
               src="/leonardo.png"
