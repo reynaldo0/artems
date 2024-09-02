@@ -38,7 +38,7 @@ const Navbar = () => {
   return (
     <nav
       ref={navbarRef}
-      className={`fixed top-6 left-1/2 transform -translate-x-1/2 z-50 transition-transform duration-300 ease-out ${
+      className={`fixed top-6 left-1/2 transform -translate-x-1/2 z-[99999] transition-transform duration-300 ease-out ${
         isVisible && !isScrolling ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
       }`}
     >

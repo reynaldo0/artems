@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Galery from "./pages/Galery";
+import Galery from "./templates/Galery";
 import Paintings from "./pages/Paintings";
 import ArtTimeline from "./components/ArtTimeline";
 import CanvasPage from "./pages/CanvasPage";

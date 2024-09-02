@@ -13,7 +13,7 @@ const Hero = () => {
 
   const { image, title, description } = currentData;
 
-  return (
+  return (  
     <div
       className="relative h-screen w-full bg-cover bg-center sm:bg-top md:bg-center"
       style={{ backgroundImage: `url(${image})` }}
