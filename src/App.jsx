@@ -7,6 +7,9 @@ import CanvasPage from "./pages/CanvasPage";
 import Vincent from "./pages/Vincent";
 import Leonardo from "./pages/Leonardo";
 import Footer from "./components/Footer";
+import Pablo from "./pages/Pablo";
+import Michaelangelo from "./pages/Michaelangelo";
+import Dali from "./pages/Dali";
 
 function App() {
   return (
@@ -24,7 +27,9 @@ function App() {
           </>
         } />
         <Route path="/vincent" element={<Vincent />} />
-        {/* Tambahkan rute untuk halaman lain jika perlu */}
+        <Route path="/pablo" element={<Pablo />} />
+        <Route path="/michaelangelo" element={<Michaelangelo />} />
+        <Route path="/dali" element={<Dali />} />
       </Routes>
       <Footer/>
     </>

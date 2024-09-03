@@ -12,7 +12,7 @@ const heroData = [
       description: "Explore the life and works of Vincent Van Gogh, a pivotal figure in post-impressionism."
     },
     {
-      path: "/picasso",
+      path: "/pablo",
       image: "/picasso.png",
       title: "Pablo Picasso",
       description: "Dive into the creative genius of Pablo Picasso, the father of Cubism."

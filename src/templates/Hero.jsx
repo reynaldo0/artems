@@ -57,9 +57,9 @@ const Hero = () => {
               Vincent Van Gogh
             </Link>
             <Link
-              to="/picasso"
+              to="/pablo"
               className={`block py-2 md:px-4 rounded-2xl transition-all duration-300 ${
-                pathname === "/picasso"
+                pathname === "/pablo"
                   ? "bg-primary text-white px-2 md:px-10"
                   : "text-primary hover:bg-gray-200"
               }`}
