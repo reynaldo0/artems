@@ -4,6 +4,8 @@ import Hero from "../templates/Hero";
 import Gallery from "../templates/Galery";
 import MichaelangeloPaintings from "../docs/MichaelangeloPaintings";
 import Paintings from "../templates/Paintings";
+import ArtTimeline from "../components/ArtTimeline";
+import CanvasPage from "./CanvasPage";
 
 const Michaelangelo = () => {
   const location = useLocation();
@@ -14,7 +16,9 @@ const Michaelangelo = () => {
 
       <Gallery/>
 
-      <Paintings painterData={MichaelangeloPaintings} painterName="Michaelangelo Van Gogh" />
+      <Paintings painterData={MichaelangeloPaintings} painterName="Michaelangelo Buonarroti" />
+      <ArtTimeline />
+              <CanvasPage />
     </div>
   );
 };

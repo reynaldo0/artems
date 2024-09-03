@@ -4,6 +4,8 @@ import Hero from "../templates/Hero";
 import Gallery from "../templates/Galery";
 import VincentPaintings from "../docs/VincentPaintings";
 import Paintings from "../templates/Paintings";
+import ArtTimeline from "../components/ArtTimeline";
+import CanvasPage from "./CanvasPage";
 
 const Vincent = () => {
   const location = useLocation();
@@ -11,10 +13,10 @@ const Vincent = () => {
   return (
     <div>
       <Hero />
-
       <Gallery/>
-
       <Paintings painterData={VincentPaintings} painterName="Vincent Van Gogh" />
+              <ArtTimeline />
+              <CanvasPage />
     </div>
   );
 };
