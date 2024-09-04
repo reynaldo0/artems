@@ -7,7 +7,7 @@ const heroData = [
     },
     {
       path: "/vincent",
-      image: "/leonardp.png",
+      image: "/vincent/hero.jpg",
       title: "Vincent Van Gogh",
       description: "Explore the life and works of Vincent Van Gogh, a pivotal figure in post-impressionism."
     },

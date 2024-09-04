@@ -13,13 +13,13 @@ const galleryData = [
     {
       path: "/vincent",
       images: [
-        { src: "/monalisa.png", title: "Mona Lisa" },
-        { src: "/supper.png", title: "The Last Supper" }
+        { src: "/vincent/gal1.png", title: "The Siesta" },
+        { src: "/vincent/gal2.png", title: "The Starry Night" }
       ],
-      mainImage: { src: "/leonardo.png", title: "Vincent Van Gogh" },
-      description: "This gallery features some of the most renowned artworks including the Mona Lisa, The Last Supper, and works by Leonardo Da Vinci. Each piece is a masterpiece with its unique history and significance in the art world.",
-      born: "April 15, 1452",
-      died: "May 2, 1519"
+      mainImage: { src: "/vincent/vincent.png", title: "Vincent Van Gogh" },
+      description: "Dutch painter, generally considered the greatest after Rembrandt van Rijn, and one of the greatest of the Post-Impressionists. The striking colour, emphatic brushwork, and contoured forms of his work powerfully influenced the current of Expressionism in modern art.",
+      born: "March 30, 1853",
+      died: "July 29, 1890"
     },
     {
       path: "/pablo",
