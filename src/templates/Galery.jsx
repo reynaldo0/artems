@@ -21,8 +21,8 @@ const Gallery = () => {
                 className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-105"
                 alt={item.title}
               />
-              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
-                <p className="text-white text-3xl md:text-5xl">{item.title}</p>
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center text-center justify-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+                <p className="text-white text-2xl md:text-4xl md:px-4">{item.title}</p>
               </div>
             </div>
           ))}
@@ -36,7 +36,7 @@ const Gallery = () => {
               alt={mainImage.title}
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
-              <p className="text-white text-3xl md:text-5xl text-center">{mainImage.title}</p>
+              <p className="text-white text-3xl md:text-5xl md:px-10 text-center">{mainImage.title}</p>
             </div>
           </div>
 

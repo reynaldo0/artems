@@ -13,19 +13,19 @@ const heroData = [
     },
     {
       path: "/pablo",
-      image: "/picasso.png",
+      image: "/pablo/hero.png",
       title: "Pablo Picasso",
       description: "Dive into the creative genius of Pablo Picasso, the father of Cubism."
     },
     {
       path: "/michaelangelo",
-      image: "/michaelangelo.png",
+      image: "/michael/hero.png",
       title: "Michaelangelo Buonarroti",
       description: "Discover the masterful works of Michaelangelo Buonarroti, a Renaissance icon."
     },
     {
       path: "/dali",
-      image: "/dali.png",
+      image: "/dali/hero.png",
       title: "Salvador Dali",
       description: "Experience the surreal and imaginative world of Salvador Dali."
     }
