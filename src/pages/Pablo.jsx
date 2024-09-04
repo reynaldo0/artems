@@ -14,11 +14,11 @@ const Pablo = () => {
     <div>
       <Hero />
 
-      <Gallery/>
+      <Gallery />
 
       <Paintings painterData={PabloPaintings} painterName="Pablo Picasso" />
       <ArtTimeline />
-              <CanvasPage />
+      <CanvasPage />
     </div>
   );
 };

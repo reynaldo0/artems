@@ -16,22 +16,13 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={
-          <>
-            <Leonardo />
-            <main>
-              <Paintings />
-              <ArtTimeline />
-              <CanvasPage />
-            </main>
-          </>
-        } />
+        <Route path="/" element={<Leonardo />} />
         <Route path="/vincent" element={<Vincent />} />
         <Route path="/pablo" element={<Pablo />} />
         <Route path="/michaelangelo" element={<Michaelangelo />} />
         <Route path="/dali" element={<Dali />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </>
   );
 }

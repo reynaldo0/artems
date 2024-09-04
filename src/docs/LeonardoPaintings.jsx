@@ -2,26 +2,26 @@ const LeonardoPaintings = [
   // hshshs
   {
     year: "1470s",
-    title: "St. Jerome In The Wilderness (1470)",
-    description: "Description here...",
+    title: "Baptism of Christ (1470)",
+    description: "Painted while Leonardo was still in Verrocchio’s studio. The painting shows the baptism of Christ by John – the Baptist.",
     image: "/gambar1.png",
   },
   {
     year: "1470s",
-    title: "Adoration of The Magi (1471)",
-    description: "Description here...",
+    title: "Annunciation (1472)",
+    description: "The annunciation is a classical religious theme that has been around since the 4th century. It depicts usually the Archangel Gabriel announcing to the Virgin Mary that she will give birth",
     image: "/gambar1.png",
   },
   {
     year: "1470s",
-    title: "Virgins of The Rocks (1473)",
-    description: "Description here...",
+    title: "Madonna of Carnation (1472)",
+    description: "For centuries, Madonna and Child with Flowers was considered lost. In 1909, the architect Leon Benois sensationally exhibited it in Saint Petersburg as part of his father-in-law's collection.",
     image: "/gambar1.png",
   },
   {
     year: "1470s",
-    title: "Virgins of The Rocks (1473)",
-    description: "Description here...",
+    title: "Ginevra de’ Benci (1474)",
+    description: "This is a portrait of Ginevra de’ Benci (born 1458) that is said to be painted to celebrate her marriage to Luigi di Bernardo Niccolini when she was 16 years old.",
     image: "/gambar1.png",
   },
   //1480s

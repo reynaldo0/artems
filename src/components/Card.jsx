@@ -1,31 +1,46 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 
-const Card = ({ title, description, image }) => {
-  const [isOpen, setIsOpen] = useState(false);
+const Card = ({ title, description, image, isOpen, onToggle }) => {
+  const cardRef = useRef(null);
 
-  const handleReadMoreClick = () => {
-    setIsOpen(!isOpen);
-  };
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (cardRef.current && !cardRef.current.contains(event.target)) {
+        if (isOpen) {
+          onToggle();
+        }
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isOpen, onToggle]);
 
   return (
-    <div className="relative max-w-lg mx-auto bg-white rounded-3xl shadow-lg overflow-hidden md:w-[400px]">
+    <div
+      ref={cardRef}
+      className="relative max-w-lg mx-auto bg-white rounded-3xl shadow-lg overflow-hidden md:w-[400px]"
+    >
       <img
         src={image}
-        className="w-full h-52 md:h-60 object-cover" // Apply rounded corners only to the top
+        className="w-full h-52 md:h-60 object-cover"
         alt={title}
       />
-      <div className="p-6"> {/* Increased padding for larger content area */}
-        <h5 className="text-3xl font-bold mb-3">{title}</h5> {/* Increased title size */}
+      <div className="p-6"> 
+        <h5 className="text-2xl font-bold mb-3">{title}</h5> 
         <div
           className={`transition-all duration-500 ease-in-out overflow-hidden ${isOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'}`}
         >
-          <p className="text-gray-600 mb-4 text-lg"> {/* Increased font size */}
+          <p className="text-gray-600 mb-4 text-md">
             {description}
           </p>
         </div>
         <button
-          onClick={handleReadMoreClick}
-          className="bg-primary text-white py-2 px-6 mt-4 hover:bg-primary-dark transition-colors duration-300 rounded-lg" // Increased padding
+          onClick={onToggle}
+          className="bg-primary text-white py-2 px-6 mt-2 hover:bg-primary-dark transition-colors duration-300 rounded-lg"
         >
           {isOpen ? 'Read Less' : 'Read More'}
         </button>

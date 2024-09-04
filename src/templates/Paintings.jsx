@@ -3,6 +3,7 @@ import Card from '../components/Card';
 
 const Paintings = ({ painterData = [], painterName }) => {
     const [selectedYear, setSelectedYear] = useState('1470s');
+    const [openCardIndex, setOpenCardIndex] = useState(null);
 
     if (!painterData || painterData.length === 0) {
         return (
@@ -14,12 +15,16 @@ const Paintings = ({ painterData = [], painterName }) => {
 
     const filteredCards = painterData.filter(card => card.year === selectedYear).slice(0, 4);
 
+    const handleCardToggle = (index) => {
+        setOpenCardIndex(openCardIndex === index ? null : index); 
+    };
+
     return (
         <div className="relative max-w-screen-2xl mx-auto py-12 md:py-24 w-full flex flex-col items-center px-5">
             <div className="text-center mb-12">
                 <p className="text-primary text-xl md:text-2xl">{painterName}</p>
                 <p className="font-bold text-4xl md:text-6xl lg:text-7xl">Paintings</p>
-                <div className="bg-white/80 text-primary bg-opacity-75 rounded-3xl sedow w-full md:max-w-5xl text-center p-1 md:p-5 my-8 md:my-10">
+                <div className="bg-white/80 text-primary bg-opacity-75 rounded-3xl shadow w-full md:max-w-5xl text-center p-1 md:p-5 my-8 md:my-10">
                     <div className="flex flex-wrap gap-5 py-1 px-3 justify-center md:gap-16 text-sm md:text-lg lg:text-xl">
                         {['1470s', '1480s', '1490s', '1500s'].map(year => (
                             <button
@@ -34,18 +39,16 @@ const Paintings = ({ painterData = [], painterName }) => {
                 </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 justify-center">
-                {filteredCards.length > 0 ? (
-                    filteredCards.map((data, index) => (
-                        <Card
-                            key={index}
-                            title={data.title}
-                            description={data.description}
-                            image={data.image}
-                        />
-                    ))
-                ) : (
-                    <p className="text-gray-500 text-lg">No paintings available for this decade.</p>
-                )}
+                {filteredCards.map((data, index) => (
+                    <Card
+                        key={index}
+                        title={data.title}
+                        description={data.description}
+                        image={data.image}
+                        isOpen={openCardIndex === index}
+                        onToggle={() => handleCardToggle(index)}
+                    />
+                ))}
             </div>
         </div>
     );
