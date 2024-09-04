@@ -2,10 +2,10 @@ const galleryData = [
     {
       path: "/",
       images: [
-        { src: "/monalisa.png", title: "Mona Lisa" },
-        { src: "/supper.png", title: "The Last Supper" }
+        { src: "/leonardo/monalisa.png", title: "Mona Lisa" },
+        { src: "/leonardo/supper.png", title: "The Last Supper" }
       ],
-      mainImage: { src: "/leonardo.png", title: "Leonardo Da Vinci" },
+      mainImage: { src: "/leonardo/leonardo.png", title: "Leonardo Da Vinci" },
       description: "a Renaissance artist, inventor, and scientist who is widely regarded as one of the greatest minds in human history. He was born in the town of Vinci, Italy, and was the illegitimate son of a wealthy notary and a peasant woman.",
       born: "April 15, 1452",
       died: "May 2, 1519"

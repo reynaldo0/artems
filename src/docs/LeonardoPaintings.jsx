@@ -77,27 +77,27 @@ const LeonardoPaintings = [
   //1500s
   {
     year: "1500s",
-    title: "St.  Jerome In The Wilderness (1500)",
-    description: "Description here...",
-    image: "/gambar1.png",
+    title: "Leda And The Swan (1504)",
+    description: "The drawing depicts the Virgin Mary seated on the knees of her mother St Anne and holding the Child Jesus while St. John the Baptist, the cousin of Jesus, stands to the right.",
+    image: "/leonardo/1500/1.png",
   },
   {
     year: "1500s",
-    title: "Adoration of The Magi (1481)",
-    d9scription: "Description here...",
-    image: "/gambar1.png",
+    title: "The Battle of Anghiari (1505)",
+    d9scription: "This paintings is usually referred to as Leonardo's Lost painting or \"the Lost Leonardo.\" It was painted around 1505 and represents the battle of Anghiari that took place in 1440.",
+    image: "/leonardo/1500/2.png",
   },
   {
     year: "1500s",
-    title: "Virgins of The Rocks (1483)",
-    description: "Description here...",
-    image: "/gambar1.png",
+    title: "La Scapigliata (1508)",
+    description: "Another lost painting by Leonardo. We have a few sketches by his own hand and many copies of the actual painting by others. He supposedly painted or at least planned to paint two different versions. One is 1504 the other in 1508.",
+    image: "/leonardo/1500/3.png",
   },
   {
     year: "1500s",
-    title: "Virgins of The Rocks (1483)",
-    description: "Description here...",
-    image: "/gambar1.png",
+    title: "Salvator Mundi (1506)",
+    description: "Depicts Christ in an anachronistic blue Renaissance dress, making the sign of the cross with his right hand, while holding a transparent, non-refracting crystal orb in his left, signaling his role as Salvator Mundi and representing the 'celestial sphere' of the heavens.",
+    image: "/leonardo/1500/4.png",
   },
 ];
 
