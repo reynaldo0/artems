@@ -27,34 +27,34 @@ const LeonardoPaintings = [
   //1480s
   {
     year: "1480s",
-    title: "St. Jerome In The Wilderness (1480)",
-    description: "Description here...",
-    image: "/gambar1.png",
+    title: "St. Jerome In The Wilderness",
+    description: "The painting depicts Saint Jerome during his retreat to the Syrian desert. St Jerome kneels in a rocky landscape, gazing toward a crucifix.",
+    image: "/leonardo/1480/5.png",
   },
   {
     year: "1480s",
     title: "Adoration of The Magi (1481)",
-    description: "Description here...",
-    image: "/gambar1.png",
+    description: "One of Leonardo’s first commissions by the Augustinian monks of San Donato a Scopeto in Florence. Although Leonardo didn’t finish it and left for Milan, it is still considered a masterpiece and has been in the Uffizi since 1670",
+    image: "/leonardo/1480/6.png",
   },
   {
     year: "1480s",
     title: "Virgins of The Rocks (1483)",
-    description: "Description here...",
-    image: "/gambar1.png",
+    description: "This painting depicts the apocryphal legend of the meeting in the wilderness between the young John the Baptist and Jesus returning home from Egypt..",
+    image: "/leonardo/1480/7.png",
   },
   {
     year: "1480s",
-    title: "Virgins of The Rocks (1483)",
-    description: "Description here...",
-    image: "/gambar1.png",
+    title: "Lady With an Ermine (1489)",
+    description: "A portrait of Cecilia Gallerani who was the mistress of Ludovico Sforza, Duke of Milan. Leonardo was probaly in the service of the Duke when this was painted. The ermine is though to symbolize purity.",
+    image: "/leonardo/1480/8.png",
   },
   //1490s
   {
     year: "1490s",
     title: "St. Jerome In The Wilderness (1490)",
     description: "Description here...",
-    image: "/gambar1.png",
+    image: "/leonardo/1480/5.png",
   },
   {
     year: "1490s",
