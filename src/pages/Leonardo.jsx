@@ -9,7 +9,9 @@ import CanvasPage from "./CanvasPage";
 const Leonardo = () => {
   return (
     <div>
+      <section id="hero">
       <Hero />
+      </section>
       <Gallery />
       <Paintings
         painterData={leonardoPaintings}
