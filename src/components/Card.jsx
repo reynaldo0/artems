@@ -28,6 +28,7 @@ const Card = ({ title, description, image, isOpen, onToggle }) => {
         src={image}
         className="w-full h-52 md:h-60 object-cover"
         alt={title}
+        loading='lazy'
       />
       <div className="p-6"> 
         <h5 className="text-2xl font-bold mb-3">{title}</h5> 

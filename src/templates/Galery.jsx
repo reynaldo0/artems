@@ -1,6 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { useLocation } from "react-router-dom";
 import galleryData from "../docs/GalleryData";
+
+const preloadImages = (images) => {
+  images.forEach((image) => {
+    const img = new Image();
+    img.src = image.src;
+  });
+};
 
 const Gallery = () => {
   const location = useLocation();
@@ -9,21 +16,24 @@ const Gallery = () => {
   const currentData = galleryData.find(data => data.path === pathname) || {};
   const { images = [], mainImage = {}, description, born, died } = currentData;
 
-  const [isDesktop, setIsDesktop] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
+
+  const handleResize = useCallback(() => {
+    setIsDesktop(window.innerWidth >= 768);
+  }, []);
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 768);
-    };
-
     handleResize();
-    window.addEventListener("resize", handleResize); 
+    window.addEventListener("resize", handleResize);
 
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
- [isDesktop, pathname];
+  }, [handleResize]);
+
+  useEffect(() => {
+    preloadImages([...images, mainImage]);
+  }, [images, mainImage]);
 
   return (
     <div className="relative max-w-screen-2xl mx-auto py-24 md:py-36 w-full flex flex-col items-center px-5">
@@ -42,6 +52,7 @@ const Gallery = () => {
                 src={item.src}
                 className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-105"
                 alt={item.title}
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center text-center justify-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
                 <p className="text-white text-2xl md:text-4xl md:px-4">
@@ -62,6 +73,7 @@ const Gallery = () => {
               src={mainImage.src}
               className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-105"
               alt={mainImage.title}
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
               <p className="text-white text-3xl md:text-5xl md:px-10 text-center">
