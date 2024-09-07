@@ -5,7 +5,7 @@ import Gallery from "../templates/Galery";
 import MichaelangeloPaintings from "../docs/MichaelangeloPaintings";
 import Paintings from "../templates/Paintings";
 import ArtTimeline from "../components/ArtTimeline";
-import CanvasPage from "./CanvasPage";
+import CanvasPage from "../components/CanvasPage";
 
 const Michaelangelo = () => {
   const location = useLocation();

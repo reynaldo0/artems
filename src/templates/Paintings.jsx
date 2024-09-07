@@ -60,7 +60,7 @@ const Paintings = ({ painterData = [], painterName }) => {
                     </div>
                 </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-14 justify-center">
                 {filteredCards.map((data, index) => (
                     <div
                       key={index}

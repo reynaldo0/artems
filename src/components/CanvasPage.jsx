@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
-import { Experience } from "../components/Models/Experience";
-import { UI } from "../components/Models/UI";
+import { Experience } from "./Models/Experience";
+import { UI } from "./Models/UI";
 
 const CanvasPage = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -25,10 +25,10 @@ const CanvasPage = () => {
   return (
     <section className="relative py-10 px-5">
       <div className="text-center mb-8">
-        <p className="text-primary mb-4 text-xl md:text-2xl">
+        <p className="text-primary mb-4 text-xl md:text-2xl" data-aos="fade-up" data-aos-duration="900">
           Timeless Canvas:
         </p>
-        <p className="font-bold text-4xl md:text-6xl">
+        <p className="font-bold text-4xl md:text-6xl" data-aos="fade-up" data-aos-duration="1100">
           Exploring Art History in 3D
         </p>
       </div>

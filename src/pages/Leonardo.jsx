@@ -4,13 +4,13 @@ import Gallery from "../templates/Galery";
 import Paintings from "../templates/Paintings";
 import leonardoPaintings from "../docs/LeonardoPaintings";
 import ArtTimeline from "../components/ArtTimeline";
-import CanvasPage from "./CanvasPage";
+import CanvasPage from "../components/CanvasPage";
 
 const Leonardo = () => {
   return (
     <div>
       <section id="hero">
-      <Hero />
+        <Hero />
       </section>
       <Gallery />
       <Paintings

@@ -20,7 +20,7 @@ const ArtTimeline = () => {
   return (
     <section className="p-8 flex justify-center">
       <div className="max-w-7xl w-full relative">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">Timeline of Art Movements</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12" data-aos="fade-up" data-aos-duration="900">Timeline of Art Movements</h2>
         <div className="relative" ref={timelineRef}>
           {/* Vertical Line */}
           <div className="absolute h-full w-[2px] bg-[#8b704d] left-1/2 transform -translate-x-1/2"></div>

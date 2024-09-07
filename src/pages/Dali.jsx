@@ -5,7 +5,7 @@ import Gallery from "../templates/Galery";
 import DaliPaintings from "../docs/DaliPaintings";
 import Paintings from "../templates/Paintings";
 import ArtTimeline from "../components/ArtTimeline";
-import CanvasPage from "./CanvasPage";
+import CanvasPage from "../components/CanvasPage";
 
 const Dali = () => {
   const location = useLocation();
@@ -14,11 +14,11 @@ const Dali = () => {
     <div>
       <Hero />
 
-      <Gallery/>
+      <Gallery />
 
       <Paintings painterData={DaliPaintings} painterName="Salvador Dali" />
       <ArtTimeline />
-              <CanvasPage />
+      <CanvasPage />
     </div>
   );
 };

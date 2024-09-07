@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Paintings from "./templates/Paintings";
 import ArtTimeline from "./components/ArtTimeline";
-import CanvasPage from "./pages/CanvasPage";
+import CanvasPage from "./components/CanvasPage";
 import Vincent from "./pages/Vincent";
 import Leonardo from "./pages/Leonardo";
 import Footer from "./components/Footer";
