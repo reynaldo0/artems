@@ -28,7 +28,7 @@ const CanvasPage = () => {
         <p className="text-primary mb-4 text-xl md:text-2xl">
           Timeless Canvas:
         </p>
-        <p className="font-bold text-4xl md:text-6xl lg:text-5xl">
+        <p className="font-bold text-4xl md:text-6xl">
           Exploring Art History in 3D
         </p>
       </div>

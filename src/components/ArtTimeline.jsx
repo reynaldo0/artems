@@ -1,39 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import AOS CSS
-
-const artMovements = [
-  {
-    title: "Renaissance",
-    period: "14th - 17th Century",
-    description: "Revival of classical art and humanism.",
-    painters: ["Leonardo da Vinci", "Michelangelo Buonarroti"],
-  },
-  {
-    title: "Post-Impressionism",
-    period: "Late 19th Century",
-    description: "Expressive, bold colors and emotive brushstrokes.",
-    painters: ["Vincent van Gogh"],
-  },
-  {
-    title: "Cubism",
-    period: "Early 20th Century",
-    description: "Geometric shapes and fragmented perspectives.",
-    painters: ["Pablo Picasso"],
-  },
-  {
-    title: "High Renaissance",
-    period: "Late 15th - Early 16th Century",
-    description: "Peak of Renaissance with balance and grandeur.",
-    painters: ["Michelangelo Buonarroti"],
-  },
-  {
-    title: "Surrealism",
-    period: "20th Century",
-    description: "Explores the unconscious mind and dreams.",
-    painters: ["Salvador Dalí"],
-  },
-];
+import artMovements from "../docs/ArtData";
 
 const ArtTimeline = () => {
   const timelineRef = useRef(null);
@@ -46,13 +12,6 @@ const ArtTimeline = () => {
 
     window.addEventListener("resize", handleResize);
 
-    // Initialize AOS
-    AOS.init({
-      duration: 1000,
-      offset: 200,
-      easing: 'ease-in-out',
-    });
-
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -60,8 +19,8 @@ const ArtTimeline = () => {
 
   return (
     <section className="p-8 flex justify-center">
-      <div className="max-w-7xl w-full">
-        <h2 className="text-3xl font-bold text-center mb-12">Timeline of Art Movements</h2>
+      <div className="max-w-7xl w-full relative">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">Timeline of Art Movements</h2>
         <div className="relative" ref={timelineRef}>
           {/* Vertical Line */}
           <div className="absolute h-full w-[2px] bg-[#8b704d] left-1/2 transform -translate-x-1/2"></div>
