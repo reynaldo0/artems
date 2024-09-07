@@ -57,8 +57,8 @@ export const UI = () => {
               key={index}
               className={`border-transparent sedow hover:border-white transition-all duration-300 px-4 py-2 rounded-full text-lg uppercase shrink-0 border ${
                 index === page
-                  ? "bg-primary/90 text-white"
-                  : "bg-black/30 text-white"
+                  ? "bg-primary/100 text-white"
+                  : "bg-primary/70 text-white"
               }`}
               onClick={() => setPage(index)}
             >
@@ -68,8 +68,8 @@ export const UI = () => {
           <button
             className={`border-transparent sedow hover:border-white transition-all duration-300 px-4 py-2 rounded-full text-lg uppercase shrink-0 border ${
               page === pages.length
-                ? "bg-primary/90 text-white"
-                : "bg-black/30 text-white"
+                ? "bg-primary/100 text-white"
+                : "bg-primary/70 text-white"
             }`}
             onClick={() => setPage(pages.length)}
           >
