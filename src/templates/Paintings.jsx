@@ -2,12 +2,24 @@ import React, { useState, useEffect } from 'react';
 import Card from '../components/Card';
 
 const Paintings = ({ painterData = [], painterName }) => {
-    // Generate unique categories from the painterData
     const categories = [...new Set(painterData.map(card => card.year))];
 
-    // Automatically select the first category as active on load
     const [selectedCategory, setSelectedCategory] = useState(categories[0] || null);
     const [openCardIndex, setOpenCardIndex] = useState(null);
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsDesktop(window.innerWidth >= 768);
+        };
+
+        handleResize();
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
 
     if (!painterData || painterData.length === 0) {
         return (
@@ -30,8 +42,8 @@ const Paintings = ({ painterData = [], painterName }) => {
             <div className="text-center mb-12">
                 <p className="text-primary text-xl md:text-2xl" data-aos="fade-up" data-aos-duration="900">{painterName}</p>
                 <p className="font-bold text-4xl md:text-6xl lg:text-7xl" data-aos="fade-up" data-aos-duration="1000">Paintings</p>
-                <div className="bg-white/80 text-primary bg-opacity-75 rounded-3xl sedow w-full md:max-w-5xl text-center p-1 md:p-5 my-8 md:my-10" data-aos="fade-up" data-aos-duration="1200">
-                    <div className="flex flex-wrap gap-2 py-1 px-3 justify-center md:gap-16 text-sm md:text-lg lg:text-xl">
+                <div className="bg-white/80 text-primary bg-opacity-75 rounded-3xl shadow w-full md:max-w-5xl text-center p-1 md:p-5 my-8 md:my-10" data-aos="fade-up" data-aos-duration="1200">
+                    <div className="flex flex-wrap py-1 px-3 justify-center md:gap-16 text-sm md:text-lg lg:text-xl">
                         {categories.map(category => (
                             <button
                                 key={category}
@@ -50,14 +62,19 @@ const Paintings = ({ painterData = [], painterName }) => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 justify-center">
                 {filteredCards.map((data, index) => (
-                    <Card
-                        key={index}
-                        title={data.title}
-                        description={data.description}
-                        image={data.image}
-                        isOpen={openCardIndex === index}
-                        onToggle={() => handleCardToggle(index)}
-                    />
+                    <div
+                      key={index}
+                      data-aos={isDesktop ? (index % 2 === 0 ? "fade-right" : "fade-left") : "fade-up"}
+                      data-aos-duration="1000"
+                    >
+                      <Card
+                          title={data.title}
+                          description={data.description}
+                          image={data.image}
+                          isOpen={openCardIndex === index}
+                          onToggle={() => handleCardToggle(index)}
+                      />
+                    </div>
                 ))}
             </div>
         </div>
