@@ -28,10 +28,10 @@ const Paintings = ({ painterData = [], painterName }) => {
     return (
         <div className="relative max-w-screen-2xl mx-auto py-12 md:py-24 w-full flex flex-col items-center px-5">
             <div className="text-center mb-12">
-                <p className="text-primary text-xl md:text-2xl">{painterName}</p>
-                <p className="font-bold text-4xl md:text-6xl lg:text-7xl">Paintings</p>
-                <div className="bg-white/80 text-primary bg-opacity-75 rounded-3xl sedow w-full md:max-w-5xl text-center p-1 md:p-5 my-8 md:my-10">
-                    <div className="flex flex-wrap gap-5 py-1 px-3 justify-center md:gap-16 text-sm md:text-lg lg:text-xl">
+                <p className="text-primary text-xl md:text-2xl" data-aos="fade-up" data-aos-duration="900">{painterName}</p>
+                <p className="font-bold text-4xl md:text-6xl lg:text-7xl" data-aos="fade-up" data-aos-duration="1000">Paintings</p>
+                <div className="bg-white/80 text-primary bg-opacity-75 rounded-3xl sedow w-full md:max-w-5xl text-center p-1 md:p-5 my-8 md:my-10" data-aos="fade-up" data-aos-duration="1200">
+                    <div className="flex flex-wrap gap-2 py-1 px-3 justify-center md:gap-16 text-sm md:text-lg lg:text-xl">
                         {categories.map(category => (
                             <button
                                 key={category}
@@ -48,7 +48,7 @@ const Paintings = ({ painterData = [], painterName }) => {
                     </div>
                 </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 justify-center">
                 {filteredCards.map((data, index) => (
                     <Card
                         key={index}
