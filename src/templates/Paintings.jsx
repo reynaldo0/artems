@@ -7,6 +7,8 @@ const Paintings = ({ painterData = [], painterName }) => {
     const [selectedCategory, setSelectedCategory] = useState(categories[0] || null);
     const [openCardIndex, setOpenCardIndex] = useState(null);
     const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
+    const [animateCards, setAnimateCards] = useState(false);
+    const [isFirstRender, setIsFirstRender] = useState(true); 
 
     useEffect(() => {
         const handleResize = () => {
@@ -20,6 +22,20 @@ const Paintings = ({ painterData = [], painterName }) => {
             window.removeEventListener("resize", handleResize);
         };
     }, []);
+
+    useEffect(() => {
+        if (isFirstRender) {
+            setIsFirstRender(false); 
+            return;
+        }
+        
+        setAnimateCards(true);
+        const timer = setTimeout(() => {
+            setAnimateCards(false);
+        }, 900);
+
+        return () => clearTimeout(timer);
+    }, [selectedCategory]);
 
     if (!painterData || painterData.length === 0) {
         return (
@@ -60,7 +76,7 @@ const Paintings = ({ painterData = [], painterName }) => {
                     </div>
                 </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-14 justify-center">
+            <div className={`grid grid-cols-1 md:grid-cols-2 gap-14 justify-center ${animateCards ? "animate-zoom-in" : ""}`}>
                 {filteredCards.map((data, index) => (
                     <div
                       key={index}
