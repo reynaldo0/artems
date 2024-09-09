@@ -54,6 +54,39 @@ const galleryData = [
       born: "May 11, 1904",
       died: "January 23, 1989"
     },
+    {
+      path: "/alifian",
+      images: [
+        { src: "/painters/dali/gal1.png", title: "The Persistence of Memory" },
+        { src: "/painters/dali/gal2.png", title: "Beauty In Teror" }
+      ],
+      mainImage: { src: "/painters/dali/dali.png", title: "Alifian Abdiel Rafif" },
+      description: "An author, artist and provocateur, Salvador Dalí was one of the most notable figures of the Surrealist movement. Born in 1904 in Figueras, Catalonia, Dalí studied art in Madrid and Barcelona, where he demonstrated masterful painting skills and experimented with several artistic styles.",
+      born: "Feb 27, 2007",
+      died: "?"
+    },
+    {
+      path: "/salman",
+      images: [
+        { src: "/painters/dali/gal1.png", title: "The Persistence of Memory" },
+        { src: "/painters/dali/gal2.png", title: "Beauty In Teror" }
+      ],
+      mainImage: { src: "/painters/dali/dali.png", title: "Muhammad Salman Alfarisi" },
+      description: "An author, artist and provocateur, Salvador Dalí was one of the most notable figures of the Surrealist movement. Born in 1904 in Figueras, Catalonia, Dalí studied art in Madrid and Barcelona, where he demonstrated masterful painting skills and experimented with several artistic styles.",
+      born: "May 11, 1904",
+      died: "January 23, 1989"
+    },
+    {
+      path: "/aldo",
+      images: [
+        { src: "/painters/dali/gal1.png", title: "The Persistence of Memory" },
+        { src: "/painters/dali/gal2.png", title: "Beauty In Teror" }
+      ],
+      mainImage: { src: "/painters/dali/dali.png", title: "Reynaldo Yusellino" },
+      description: "An author, artist and provocateur, Salvador Dalí was one of the most notable figures of the Surrealist movement. Born in 1904 in Figueras, Catalonia, Dalí studied art in Madrid and Barcelona, where he demonstrated masterful painting skills and experimented with several artistic styles.",
+      born: "May 11, 1904",
+      died: "January 23, 1989"
+    },
   ];
   
   export default galleryData;

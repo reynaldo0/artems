@@ -6,6 +6,7 @@ import MichaelangeloPaintings from "../docs/MichaelangeloPaintings";
 import Paintings from "../templates/Paintings";
 import ArtTimeline from "../components/ArtTimeline";
 import CanvasPage from "../components/CanvasPage";
+import Footer from "../components/Footer";
 
 const Michaelangelo = () => {
   const location = useLocation();
@@ -24,6 +25,7 @@ const Michaelangelo = () => {
       </section>
       <ArtTimeline />
       <CanvasPage />
+      <Footer/>
     </div>
   );
 };

@@ -6,6 +6,7 @@ import VincentPaintings from "../docs/VincentPaintings";
 import Paintings from "../templates/Paintings";
 import ArtTimeline from "../components/ArtTimeline";
 import CanvasPage from "../components/CanvasPage";
+import Footer from "../components/Footer";
 
 const Vincent = () => {
   const location = useLocation();
@@ -24,6 +25,7 @@ const Vincent = () => {
       </section>
       <ArtTimeline />
       <CanvasPage />
+      <Footer/>
     </div>
   );
 };

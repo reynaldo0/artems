@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import logoImg from '/vite.svg';
+import { Link } from 'react-router-dom'; // Import Link dari react-router-dom
 
 const Navbar = () => {
   const navbarRef = useRef(null);
@@ -49,34 +50,34 @@ const Navbar = () => {
           </div>
           <ul className="flex space-x-4 text-white">
             <li className="relative group">
-              <a
-                href="#hero"
-                className="block rounded px-2 py-1 transition-all duration-300 text-white hover:text-yellow-400 before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-full before:scale-x-0 before:bg-yellow-400 before:opacity-0 before:transition before:content-[''] hover:before:scale-x-100 hover:before:opacity-100"
-              >
-                Home
-              </a>
+            <Link
+    to="/" // Mengubah href menjadi to untuk berpindah ke halaman About
+    className="block rounded px-2 py-1 transition-all duration-300 text-white hover:text-white-400 before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-full before:scale-x-0 before:bg-yellow-200 before:opacity-0 before:transition before:content-[''] hover:before:scale-x-100 hover:before:opacity-100"
+  >
+    Home
+  </Link>
             </li>
             <li className="relative group">
               <a
                 href="#paintings"
-                className="block rounded px-2 py-1 transition-all duration-300 text-white hover:text-yellow-400 before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-full before:scale-x-0 before:bg-yellow-400 before:opacity-0 before:transition before:content-[''] hover:before:scale-x-100 hover:before:opacity-100"
+                className="block rounded px-2 py-1 transition-all duration-300 text-white hover:text-white-400 before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-full before:scale-x-0 before:bg-yellow-200 before:opacity-0 before:transition before:content-[''] hover:before:scale-x-100 hover:before:opacity-100"
               >
                 Paintings
               </a>
             </li>
             <li className="relative group">
-              <a
-                href="#about"
-                className="block rounded px-2 py-1 transition-all duration-300 text-white hover:text-yellow-400 before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-full before:scale-x-0 before:bg-yellow-400 before:opacity-0 before:transition before:content-[''] hover:before:scale-x-100 hover:before:opacity-100"
-              >
-                About
-              </a>
-            </li>
+  <Link
+    to="/alifian" // Mengubah href menjadi to untuk berpindah ke halaman About
+    className="block rounded px-2 py-1 transition-all duration-300 text-white hover:text-white-400 before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-full before:scale-x-0 before:bg-yellow-200 before:opacity-0 before:transition before:content-[''] hover:before:scale-x-100 hover:before:opacity-100"
+  >
+    About
+  </Link>
+</li>
           </ul>
           <div className="flex items-center">
             <a
               href="#3d"
-              className="bg-primary/100 text-white px-3 py-1 rounded-full hover:bg-yellow-500 transition-all duration-300"
+              className="bg-primary/100 text-white px-3 py-1 rounded-full hover:bg-yellow-200  hover:text-primary transition-all duration-300"
             >
               3D
             </a>

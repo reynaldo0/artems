@@ -5,6 +5,7 @@ import Paintings from "../templates/Paintings";
 import leonardoPaintings from "../docs/LeonardoPaintings";
 import ArtTimeline from "../components/ArtTimeline";
 import CanvasPage from "../components/CanvasPage";
+import Footer from "../components/Footer";
 
 const Leonardo = () => {
   return (
@@ -21,6 +22,7 @@ const Leonardo = () => {
       </section>
       <ArtTimeline />
       <CanvasPage />
+      <Footer />
     </div>
   );
 };

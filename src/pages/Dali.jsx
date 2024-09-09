@@ -6,6 +6,7 @@ import DaliPaintings from "../docs/DaliPaintings";
 import Paintings from "../templates/Paintings";
 import ArtTimeline from "../components/ArtTimeline";
 import CanvasPage from "../components/CanvasPage";
+import Footer from "../components/Footer";
 
 const Dali = () => {
   const location = useLocation();
@@ -21,6 +22,7 @@ const Dali = () => {
       </section>
       <ArtTimeline />
       <CanvasPage />
+      <Footer/>
     </div>
   );
 };

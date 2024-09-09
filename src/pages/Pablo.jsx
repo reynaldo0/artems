@@ -6,6 +6,7 @@ import PabloPaintings from "../docs/PabloPaintings";
 import Paintings from "../templates/Paintings";
 import ArtTimeline from "../components/ArtTimeline";
 import CanvasPage from "../components/CanvasPage";
+import Footer from "../components/Footer";
 
 const Pablo = () => {
   const location = useLocation();
@@ -21,6 +22,7 @@ const Pablo = () => {
       </section>
       <ArtTimeline />
       <CanvasPage />
+      <Footer/>
     </div>
   );
 };

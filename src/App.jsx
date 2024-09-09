@@ -10,6 +10,10 @@ import Footer from "./components/Footer";
 import Pablo from "./pages/Pablo";
 import Michaelangelo from "./pages/Michaelangelo";
 import Dali from "./pages/Dali";
+import AboutPage from "./pages/AboutPage";
+import Alifian from "./pages/Alifian";
+import Salman from "./pages/Salman";
+import Aldo from "./pages/Aldo";
 
 function App() {
   return (
@@ -21,8 +25,13 @@ function App() {
         <Route path="/pablo" element={<Pablo />} />
         <Route path="/michaelangelo" element={<Michaelangelo />} />
         <Route path="/dali" element={<Dali />} />
+        
+        <Route path="/about" element={<AboutPage/>}/>
+        <Route path="/alifian" element={<Alifian/>}/>
+        <Route path="/salman" element={<Salman/>}/>
+        <Route path="/aldo" element={<Aldo/>}/>
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
