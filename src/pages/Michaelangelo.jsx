@@ -19,7 +19,7 @@ const Michaelangelo = () => {
       <section id="paintings">
       <Paintings
         painterData={MichaelangeloPaintings}
-        painterName="Michaelangelo Buonarroti"
+        painterName="Michelangelo Buonarroti"
       />
       </section>
       <ArtTimeline />

@@ -3,11 +3,11 @@ import { atom, useAtom } from "jotai";
 import { useEffect } from "react";
 
 const pictures = [
-  "DSC00680",
-  "DSC00933",
-  "DSC00966",
-  "DSC00983",
-  "DSC01011",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
   "DSC01040",
   "DSC01064",
   "DSC01071",

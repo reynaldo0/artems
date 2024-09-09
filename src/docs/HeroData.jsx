@@ -20,7 +20,7 @@ const heroData = [
     {
       path: "/michaelangelo",
       image: "/painters/michael/hero.png",
-      title: "Michaelangelo Buonarroti",
+      title: "Michelangelo Buonarroti",
       description: "Discover the masterful works of Michaelangelo Buonarroti, a Renaissance icon."
     },
     {

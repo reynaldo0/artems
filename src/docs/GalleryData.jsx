@@ -38,7 +38,7 @@ const galleryData = [
         { src: "/painters/michael/gal1.png", title: "The Creation of Adam" },
         { src: "/painters/michael/gal2.png", title: "The Measure of Genius" }
       ],
-      mainImage: { src: "/painters/michael/michael.png", title: "Michaelangelo Buonarroti" },
+      mainImage: { src: "/painters/michael/michael.png", title: "Michelangelo Buonarroti" },
       description: "Michelangelo was considered the greatest living artist in his lifetime, and ever since then he has been held to be one of the greatest artists of all time. A number of his works in painting, sculpture, and architecture rank among the most famous in existence.",
       born: "March 6, 1475",
       died: "February 18, 1564"

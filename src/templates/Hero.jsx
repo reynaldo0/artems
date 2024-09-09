@@ -73,7 +73,7 @@ const Hero = () => {
                   : "text-primary hover:bg-gray-200"
               }`}
             >
-              Michaelangelo Buonarroti
+              Michelangelo Buonarroti
             </Link>
             <Link
               to="/dali"
