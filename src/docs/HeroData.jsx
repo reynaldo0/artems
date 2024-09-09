@@ -25,7 +25,7 @@ const heroData = [
     },
     {
       path: "/dali",
-      image: "/painters/dali/hero.png",
+      image: "/painters/dali/wall.jpg",
       title: "Salvador Dali",
       description: "Experience the surreal and imaginative world of Salvador Dali."
     }
