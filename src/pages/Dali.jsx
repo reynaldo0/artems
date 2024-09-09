@@ -12,11 +12,13 @@ const Dali = () => {
 
   return (
     <div>
-      <Hero />
-
+       <section id="hero">
+        <Hero />
+      </section>
       <Gallery />
-
+      <section id="paintings">
       <Paintings painterData={DaliPaintings} painterName="Salvador Dali" />
+      </section>
       <ArtTimeline />
       <CanvasPage />
     </div>

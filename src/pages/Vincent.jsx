@@ -12,12 +12,16 @@ const Vincent = () => {
 
   return (
     <div>
-      <Hero />
+       <section id="hero">
+        <Hero />
+      </section>
       <Gallery />
+      <section id="paintings">
       <Paintings
         painterData={VincentPaintings}
         painterName="Vincent Van Gogh"
       />
+      </section>
       <ArtTimeline />
       <CanvasPage />
     </div>

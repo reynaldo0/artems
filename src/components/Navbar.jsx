@@ -58,18 +58,18 @@ const Navbar = () => {
             </li>
             <li className="relative group">
               <a
-                href="#about"
+                href="#paintings"
                 className="block rounded px-2 py-1 transition-all duration-300 text-white hover:text-yellow-400 before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-full before:scale-x-0 before:bg-yellow-400 before:opacity-0 before:transition before:content-[''] hover:before:scale-x-100 hover:before:opacity-100"
               >
-                About
+                Paintings
               </a>
             </li>
             <li className="relative group">
               <a
-                href="#case"
+                href="#about"
                 className="block rounded px-2 py-1 transition-all duration-300 text-white hover:text-yellow-400 before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-full before:scale-x-0 before:bg-yellow-400 before:opacity-0 before:transition before:content-[''] hover:before:scale-x-100 hover:before:opacity-100"
               >
-                Case
+                About
               </a>
             </li>
           </ul>

@@ -13,10 +13,12 @@ const Leonardo = () => {
         <Hero />
       </section>
       <Gallery />
+      <section id="paintings">
       <Paintings
         painterData={leonardoPaintings}
         painterName="Leonardo Da Vinci"
       />
+      </section>
       <ArtTimeline />
       <CanvasPage />
     </div>

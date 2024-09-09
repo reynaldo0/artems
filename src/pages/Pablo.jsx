@@ -12,11 +12,13 @@ const Pablo = () => {
 
   return (
     <div>
-      <Hero />
-
+       <section id="hero">
+        <Hero />
+      </section>
       <Gallery />
-
+      <section id="paintings">
       <Paintings painterData={PabloPaintings} painterName="Pablo Picasso" />
+      </section>
       <ArtTimeline />
       <CanvasPage />
     </div>
