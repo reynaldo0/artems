@@ -57,8 +57,8 @@ const galleryData = [
     {
       path: "/alifian",
       images: [
-        { src: "/painters/dali/gal1.png", title: "The Persistence of Memory" },
-        { src: "/painters/dali/gal2.png", title: "Beauty In Teror" }
+        { src: "/46.jpg", title: "SMKN 46 Jakarta" },
+        { src: "/coder.png", title: "Coder" }
       ],
       mainImage: { src: "/painters/dali/dali.png", title: "Alifian Abdiel Rafif" },
       description: "An author, artist and provocateur, Salvador Dalí was one of the most notable figures of the Surrealist movement. Born in 1904 in Figueras, Catalonia, Dalí studied art in Madrid and Barcelona, where he demonstrated masterful painting skills and experimented with several artistic styles.",
@@ -68,8 +68,8 @@ const galleryData = [
     {
       path: "/salman",
       images: [
-        { src: "/painters/dali/gal1.png", title: "The Persistence of Memory" },
-        { src: "/painters/dali/gal2.png", title: "Beauty In Teror" }
+        { src: "/46.jpg", title: "SMKN 46 Jakarta" },
+        { src: "/coder.png", title: "Designer" }
       ],
       mainImage: { src: "/painters/dali/dali.png", title: "Muhammad Salman Alfarisi" },
       description: "An author, artist and provocateur, Salvador Dalí was one of the most notable figures of the Surrealist movement. Born in 1904 in Figueras, Catalonia, Dalí studied art in Madrid and Barcelona, where he demonstrated masterful painting skills and experimented with several artistic styles.",
@@ -79,8 +79,8 @@ const galleryData = [
     {
       path: "/aldo",
       images: [
-        { src: "/painters/dali/gal1.png", title: "The Persistence of Memory" },
-        { src: "/painters/dali/gal2.png", title: "Beauty In Teror" }
+        { src: "/46.jpg", title: "SMKN 46 Jakarta" },
+        { src: "/coder.png", title: "Coder" }
       ],
       mainImage: { src: "/painters/dali/dali.png", title: "Reynaldo Yusellino" },
       description: "An author, artist and provocateur, Salvador Dalí was one of the most notable figures of the Surrealist movement. Born in 1904 in Figueras, Catalonia, Dalí studied art in Madrid and Barcelona, where he demonstrated masterful painting skills and experimented with several artistic styles.",
