@@ -52,3 +52,18 @@ html {
 .animate-zoom-in {
   animation: zoomIn 1s ease-out;
 }
+
+@keyframes fadeInOut {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroll-to-top {
+  animation: fadeInOut 0.5s ease-in-out;
+}

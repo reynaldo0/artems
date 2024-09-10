@@ -11,17 +11,13 @@ import AboutPage from "./pages/AboutPage";
 import Alifian from "./pages/Alifian";
 import Salman from "./pages/Salman";
 import Aldo from "./pages/Aldo";
+import ToTopButton from "./components/ToUp";
 
 function App() {
-  const location = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location.pathname]);
-
   return (
     <>
       <Navbar />
+      <ToTopButton/>
       <Routes>
         <Route path="/" element={<Leonardo />} />
         <Route path="/vincent" element={<Vincent />} />

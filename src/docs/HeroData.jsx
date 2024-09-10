@@ -2,7 +2,7 @@ const heroData = [
     {
       path: "/",
       image: "/painters/leonardo/hero2.jpg",
-      title: "The Painters Symphony",
+      title: "Leonardo Da Vinci",
       description: "Discover the World of Painters and Their Artistic Masterpieces."
     },
     {

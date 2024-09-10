@@ -6,6 +6,7 @@ import leonardoPaintings from "../docs/LeonardoPaintings";
 import ArtTimeline from "../components/ArtTimeline";
 import CanvasPage from "../components/CanvasPage";
 import Footer from "../components/Footer";
+import { useLocation } from "react-router-dom";
 
 const Leonardo = () => {
   return (
