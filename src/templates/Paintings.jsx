@@ -80,7 +80,7 @@ const Paintings = ({ painterData = [], painterName }) => {
           Paintings
         </p>
         <div
-          className="bg-white/80 text-primary bg-opacity-75 rounded-3xl shadow w-full md:max-w-5xl text-center p-1 md:p-5 my-8 md:my-10"
+          className="bg-white/80 text-primary bg-opacity-75 rounded-3xl sedow w-full md:max-w-5xl text-center p-1 md:p-5 my-8 md:my-10"
           data-aos="fade-up"
           data-aos-duration="1200"
         >

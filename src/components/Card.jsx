@@ -22,7 +22,7 @@ const Card = ({ title, description, image, isOpen, onToggle }) => {
   return (
     <div
       ref={cardRef}
-      className="relative max-w-lg mx-auto bg-white rounded-3xl shadow-lg overflow-hidden md:w-[400px]" 
+      className="relative max-w-lg mx-auto bg-white rounded-3xl sedow overflow-hidden md:w-[400px]" 
     >
       <img
         src={image}

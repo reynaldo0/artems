@@ -20,7 +20,7 @@ const Hero = () => {
       <div className="absolute bottom-0 left-0 w-full h-60 bg-gradient-to-t from-white/90 to-transparent"></div>
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-4">
-        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold" data-aos="fade-up" data-aos-duration="1000">
+        <h1 className="text-5xl md:text-7xl font-bold" data-aos="fade-up" data-aos-duration="1000">
           {title}
         </h1>
         <p className="mt-3 text-lg md:text-xl" data-aos="fade-up" data-aos-duration="1300">
@@ -34,7 +34,7 @@ const Hero = () => {
         </div>
 
         <div className="bg-white/80 text-primary bg-opacity-75 rounded-3xl shadow-lg w-full md:max-w-5xl text-center p-3 md:p-8">
-          <div className="flex gap-2 md:gap-7 text-xs md:text-2xl">
+          <div className="flex gap-1 md:gap-7 text-xs md:text-2xl">
             <Link
               to="/"
               className={`block py-2 md:px-4 rounded-2xl transition-all duration-300 ${

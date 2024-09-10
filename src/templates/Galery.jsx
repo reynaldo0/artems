@@ -46,7 +46,7 @@ const Gallery = () => {
           {images.map((item, index) => (
             <div
               key={index}
-              className="relative w-full md:w-72 h-48 sm:h-60 md:h-60 overflow-hidden rounded-3xl group shadow"
+              className="relative w-full md:w-72 h-48 sm:h-60 md:h-60 overflow-hidden rounded-3xl group sedow"
             >
               <img
                 src={item.src}
@@ -65,7 +65,7 @@ const Gallery = () => {
 
         <div className="relative md:absolute md:left-[21rem] flex flex-col md:flex-row col-span-1 mt-2 md:mt-0">
           <div
-            className="relative w-full md:w-80 h-60 md:h-full overflow-hidden rounded-3xl group shadow"
+            className="relative w-full md:w-80 h-60 md:h-full overflow-hidden rounded-3xl group sedow"
             data-aos={isDesktop ? "fade-left" : "fade-up"}
             data-aos-duration="900"
           >
