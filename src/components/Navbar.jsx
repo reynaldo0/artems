@@ -8,20 +8,16 @@ const Navbar = () => {
 
   const homeClick = () => {
     if (location.pathname === '/') {
-      // Jika sudah di halaman home, scroll ke bagian #hero
       document.getElementById('hero')?.scrollIntoView({ behavior: 'smooth' });
     } else {
-      // Jika di halaman lain, navigasi ke halaman home
       navigate('/');
     }
   };
 
   const aboutClick = () => {
     if (location.pathname === '/') {
-      // Jika sudah di halaman home, scroll ke bagian #timeline
       document.getElementById('timeline')?.scrollIntoView({ behavior: 'smooth' });
     } else {
-      // Jika di halaman lain, navigasi ke halaman home dan scroll ke #timeline
       navigate('/', { state: { scrollToTimeline: true } });
     }
   };
