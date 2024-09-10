@@ -14,15 +14,15 @@ const LeonardoPaintings = [
   },
   {
     year: "1470s",
-    title: "Madonna of Carnation (1472)",
-    description: "For centuries, Madonna and Child with Flowers was considered lost. In 1909, the architect Leon Benois sensationally exhibited it in Saint Petersburg as part of his father-in-law's collection.",
-    image: "/painters/leonardo/1470/3.png",
-  },
-  {
-    year: "1470s",
     title: "Ginevra de’ Benci (1474)",
     description: "This is a portrait of Ginevra de’ Benci (born 1458) that is said to be painted to celebrate her marriage to Luigi di Bernardo Niccolini when she was 16 years old.",
     image: "/painters/leonardo/1470/4.png",
+  },
+  {
+    year: "1470s",
+    title: "Benois Madonna (1478)",
+    description: "Young Virgin Mary with her naked Baby Jesus on her lap. She is holding a carnation (interpreted as a healing symbol).",
+    image: "/painters/leonardo/1470/3.png",
   },
   //1480s
   {
