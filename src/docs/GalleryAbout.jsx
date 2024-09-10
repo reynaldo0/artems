@@ -5,7 +5,7 @@ const galleryAboutData = [
         { src: "/painters/leonardo/monalisa.png", title: "Mona Lisa" },
         { src: "/painters/leonardo/supper.png", title: "The Last Supper" }
       ],
-      mainImage: { src: "/painters/leonardo/leonardo.png", title: "Alifian Abdiel Rafif" },
+      mainImage: { src: "/about/2.jpg", title: "Alifian Abdiel Rafif" },
       description: "a Renaissance artist, inventor, and scientist who is widely regarded as one of the greatest minds in human history. He was born in the town of Vinci, Italy, and was the illegitimate son of a wealthy notary and a peasant woman.",
       born: "April 15, 1452",
       socialLinks: [
@@ -20,7 +20,7 @@ const galleryAboutData = [
         { src: "/painters/vincent/gal1.png", title: "The Siesta" },
         { src: "/painters/vincent/gal2.png", title: "The Starry Night" }
       ],
-      mainImage: { src: "/painters/vincent/vincent.png", title: "Muhammad Salman Alfarizi" },
+      mainImage: { src: "/about/1.jpg", title: "Muhammad Salman Alfarizi" },
       description: "Dutch painter, generally considered the greatest after Rembrandt van Rijn, and one of the greatest of the Post-Impressionists.",
       born: "March 30, 1853",
       socialLinks: [
