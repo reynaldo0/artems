@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import logoImg from '/vite.svg';
 
@@ -21,6 +21,23 @@ const Navbar = () => {
       navigate('/', { state: { scrollToTimeline: true } });
     }
   };
+
+  const threeDClick = () => {
+    if (location.pathname === '/') {
+      document.getElementById('3d')?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate('/', { state: { scrollTo3d: true } });
+    }
+  };
+
+  useEffect(() => {
+    if (location.state?.scrollToTimeline) {
+      document.getElementById('timeline')?.scrollIntoView({ behavior: 'smooth' });
+    }
+    if (location.state?.scrollTo3d) {
+      document.getElementById('3d')?.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [location.state]);
 
   return (
     <nav
@@ -58,12 +75,12 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="flex items-center">
-            <a
-              href="#3d"
+            <button
+              onClick={threeDClick}
               className="bg-primary/100 text-white px-3 py-1 rounded-full hover:bg-yellow-200 hover:text-primary transition-all duration-300"
             >
               3D
-            </a>
+            </button>
           </div>
         </div>
       </div>

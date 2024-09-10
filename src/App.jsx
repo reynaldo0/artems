@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Vincent from './pages/Vincent';
 import Leonardo from './pages/Leonardo';
@@ -13,13 +13,6 @@ import Salman from './pages/Salman';
 import Aldo from './pages/Aldo';
 
 function App() {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.state?.scrollToTimeline) {
-      document.getElementById('timeline')?.scrollIntoView({ behavior: 'smooth' });
-    }
-  }, [location.state]);
 
   return (
     <>

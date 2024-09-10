@@ -23,7 +23,9 @@ const Leonardo = () => {
       <section id="timeline">
         <ArtTimeline />
       </section>
-      <CanvasPage />
+      <section id="3d">
+        <CanvasPage />
+      </section>
       <Footer />
     </div>
   );
