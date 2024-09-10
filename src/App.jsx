@@ -1,18 +1,23 @@
-import React, { useEffect } from 'react';
-import { Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Vincent from './pages/Vincent';
-import Leonardo from './pages/Leonardo';
-import Footer from './components/Footer';
-import Pablo from './pages/Pablo';
-import Michaelangelo from './pages/Michaelangelo';
-import Dali from './pages/Dali';
-import AboutPage from './pages/AboutPage';
-import Alifian from './pages/Alifian';
-import Salman from './pages/Salman';
-import Aldo from './pages/Aldo';
+import React, { useEffect } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Vincent from "./pages/Vincent";
+import Leonardo from "./pages/Leonardo";
+import Footer from "./components/Footer";
+import Pablo from "./pages/Pablo";
+import Michaelangelo from "./pages/Michaelangelo";
+import Dali from "./pages/Dali";
+import AboutPage from "./pages/AboutPage";
+import Alifian from "./pages/Alifian";
+import Salman from "./pages/Salman";
+import Aldo from "./pages/Aldo";
 
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <>
