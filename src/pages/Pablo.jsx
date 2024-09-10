@@ -13,16 +13,18 @@ const Pablo = () => {
 
   return (
     <div>
-       <section id="hero">
+      <section id="hero">
         <Hero />
       </section>
       <Gallery />
       <section id="paintings">
-      <Paintings painterData={PabloPaintings} painterName="Pablo Picasso" />
+        <Paintings painterData={PabloPaintings} painterName="Pablo Picasso" />
       </section>
-      <ArtTimeline />
+      <section id="timeline">
+        <ArtTimeline />
+      </section>
       <CanvasPage />
-      <Footer/>
+      <Footer />
     </div>
   );
 };

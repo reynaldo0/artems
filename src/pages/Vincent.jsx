@@ -13,19 +13,21 @@ const Vincent = () => {
 
   return (
     <div>
-       <section id="hero">
+      <section id="hero">
         <Hero />
       </section>
       <Gallery />
       <section id="paintings">
-      <Paintings
-        painterData={VincentPaintings}
-        painterName="Vincent Van Gogh"
-      />
+        <Paintings
+          painterData={VincentPaintings}
+          painterName="Vincent Van Gogh"
+        />
       </section>
-      <ArtTimeline />
+      <section id="timeline">
+        <ArtTimeline />
+      </section>
       <CanvasPage />
-      <Footer/>
+      <Footer />
     </div>
   );
 };

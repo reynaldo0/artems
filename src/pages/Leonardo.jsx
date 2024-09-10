@@ -15,12 +15,14 @@ const Leonardo = () => {
       </section>
       <Gallery />
       <section id="paintings">
-      <Paintings
-        painterData={leonardoPaintings}
-        painterName="Leonardo Da Vinci"
-      />
+        <Paintings
+          painterData={leonardoPaintings}
+          painterName="Leonardo Da Vinci"
+        />
       </section>
-      <ArtTimeline />
+      <section id="timeline">
+        <ArtTimeline />
+      </section>
       <CanvasPage />
       <Footer />
     </div>

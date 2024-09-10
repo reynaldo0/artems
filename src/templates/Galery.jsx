@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useCallback } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import galleryData from "../docs/GalleryData";
 
 const preloadImages = (images) => {
@@ -116,9 +116,9 @@ const Gallery = () => {
               data-aos={isDesktop ? "fade-left" : "fade-up"}
               data-aos-duration="1000"
             >
-              <button className="bg-transparent border-2 border-primary hover:bg-primary hover:text-white text-primary rounded-full px-5 py-2">
-                Read More
-              </button>
+              <a href="#paintings" className="bg-transparent border-2 border-primary hover:bg-primary hover:text-white text-primary rounded-full px-5 py-2">
+                See Paintings
+              </a>
             </div>
           </div>
         </div>
