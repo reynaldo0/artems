@@ -2,12 +2,12 @@ const galleryAboutData = [
     {
       path: "/alifian",
       images: [
-        { src: "/painters/leonardo/monalisa.png", title: "Mona Lisa" },
+        { src: "/46.jpg", title: "SMKN 46 JAKARTA" },
         { src: "/painters/leonardo/supper.png", title: "The Last Supper" }
       ],
       mainImage: { src: "/about/2.jpg", title: "Alifian Abdiel Rafif" },
       description: "a Renaissance artist, inventor, and scientist who is widely regarded as one of the greatest minds in human history. He was born in the town of Vinci, Italy, and was the illegitimate son of a wealthy notary and a peasant woman.",
-      born: "April 15, 1452",
+      born: "February 27, 2007",
       socialLinks: [
         { icon: "Instagram", url: "https://instagram.com/vincent" },
         { icon: "Linkedin", url: "https://linkedin.com/vincent" },
@@ -17,7 +17,7 @@ const galleryAboutData = [
     {
       path: "/salman",
       images: [
-        { src: "/painters/vincent/gal1.png", title: "The Siesta" },
+        { src: "/46.jpg", title: "SMKN 46 JAKARTA" },
         { src: "/painters/vincent/gal2.png", title: "The Starry Night" }
       ],
       mainImage: { src: "/about/1.jpg", title: "Muhammad Salman Alfarizi" },
@@ -32,7 +32,7 @@ const galleryAboutData = [
     {
       path: "/aldo",
       images: [
-        { src: "/painters/pablo/gal1.png", title: "Women In Head" },
+        { src: "/46.jpg", title: "SMKN 46 JAKARTA" },
         { src: "/painters/pablo/gal2.png", title: "The Weeping Woman" }
       ],
       mainImage: { src: "/painters/pablo/pablo.png", title: "Reynaldo Yusellino" },
@@ -46,4 +46,4 @@ const galleryAboutData = [
     }
   ];
 
-export default galleryAboutData;
+export default galleryAboutData;     

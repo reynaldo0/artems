@@ -41,7 +41,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-6 left-1/2 transform -translate-x-1/2 z-[99999] transition-transform duration-300 ease-out scale-90 md:scale-125`}
+      className={`fixed top-6 left-1/2 transform -translate-x-1/2 z-[99999] transition-transform duration-300 ease-out scale-90 md:scale-105`}
     >
       <div className="flex items-center justify-between rounded-full p-[2px] bg-gradient-to-r from-primary/50 to-primary/10 backdrop-blur-md">
         <div className="flex items-center space-x-4 bg-primary/50 rounded-full px-4 py-1">
