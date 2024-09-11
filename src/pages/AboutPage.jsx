@@ -20,11 +20,12 @@ const AboutPage = () => {
     <div
       className="relative h-screen w-full bg-cover bg-center sm:bg-top md:bg-center"
       style={{
-        backgroundImage: `url(${image || "/painters/leonardo/hero2.jpg"})`,
+        backgroundImage: `url(${image || "/about/land.jpg"})`,
       }}
     >
       <div className="absolute inset-0 bg-black opacity-75"></div>
-      <div className="absolute bottom-0 left-0 w-full h-60 bg-gradient-to-t from-white/90 to-transparent"></div>
+      <div className="absolute bottom-0 left-0 w-full h-60 bg-gradient-to-t from-white/100 via-white/20 to-transparent"></div>
+
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-4">
         {/* Teks dengan FlipWords */}

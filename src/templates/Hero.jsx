@@ -17,7 +17,7 @@ const Hero = () => {
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
-      <div className="absolute bottom-0 left-0 w-full h-60 bg-gradient-to-t from-white/90 to-transparent"></div>
+      <div className="absolute bottom-0 left-0 w-full h-60 bg-gradient-to-t from-white/100 via-white/40 to-transparent"></div>
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-4">
         <h1 className="text-5xl md:text-7xl font-bold" data-aos="fade-up" data-aos-duration="1000">
