@@ -11,10 +11,9 @@ const AboutPage = () => {
   const { image, description } = currentData;
 
   const words = [
-    "About Us",
-    "Tentang Kami",
-    "À Propos de Nous",
-    "私たちについて",
+    "Let's take a look at our team biography!",
+    "Get to know the inspiring team behind our site!",
+    "Meet the creative team behind this art project!"
   ];
 
   return (
@@ -29,9 +28,9 @@ const AboutPage = () => {
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-4">
         {/* Teks dengan FlipWords */}
-        <div className="mt-20">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold">
-            <FlipWords words={words} />
+        <div className="mt-12">
+          <h1 className="text-3xl md:text-6xl font-bold mx-40">
+            <FlipWords className="text-center" words={words} />
           </h1>
           <p className="mt-3 text-lg md:text-xl">{description}</p>
         </div>
