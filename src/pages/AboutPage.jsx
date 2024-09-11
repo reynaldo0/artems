@@ -29,7 +29,7 @@ const AboutPage = () => {
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-4">
         {/* Teks dengan FlipWords */}
         <div className="mt-12">
-          <h1 className="text-3xl md:text-6xl font-bold mx-40">
+          <h1 className="text-4xl md:text-6xl font-bold md:mx-40">
             <FlipWords className="text-center" words={words} />
           </h1>
           <p className="mt-3 text-lg md:text-xl">{description}</p>
