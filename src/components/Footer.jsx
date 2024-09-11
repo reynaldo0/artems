@@ -17,7 +17,7 @@ const Footer = () => {
 
             <div className="mb-5 mt-5 md:mb-0">
               <h2 className="mb-6 text-base font-semibold uppercase text-white">
-                Hubungi Kami
+                contact us
               </h2>
               <ul className="font-medium text-white/60">
                 <li className="mb-4 flex items-center gap-3 text-base">
@@ -72,7 +72,7 @@ const Footer = () => {
 
             <div>
               <h2 className="mb-6 text-sm font-semibold uppercase text-white">
-                Sumber Data
+                data source
               </h2>
               <ul className="font-medium text-white/60">
                 <li className="mb-4">
