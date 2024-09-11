@@ -9,8 +9,8 @@ const Footer = () => {
           <div className="mb-6 flex flex-col justify-between md:mb-0">
             <a href="#home" className="flex items-center">
               <img
-                src="./logo.png"
-                className="me-3 h-25 w-[100px]"
+                src="./artem3.png"
+                className="me-3 h-25 w-[130px]"
                 alt="FlowBite Logo"
               />
             </a>
@@ -77,7 +77,7 @@ const Footer = () => {
               <ul className="font-medium text-white/60">
                 <li className="mb-4">
                   <a
-                    href="https://Detik.com"
+                    href="https://www.vangoghmuseum.nl/en"
                     className="lowercase hover:underline hover:text-yellow-200"
                   >
                     Van Gogh Museum
@@ -85,7 +85,7 @@ const Footer = () => {
                 </li>
                 <li className="mb-4">
                   <a
-                    href="https://Kompasiana.com"
+                    href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwju5ey8pLqIAxUiq2YCHSOAGBMYABAAGgJzbQ&co=1&ase=2&gclid=CjwKCAjw3P-2BhAEEiwA3yPhwIx2mKzW1G8HdkXqpNbqmsgSQZiH6nqnEWjsPVJ09oqzr57SF5z_GBoCpHoQAvD_BwE&ohost=www.google.com&cid=CAESVuD2nOScojiVO9JYyMaP2l3fMKU5gK2y2SL3LPzMbayhSQR6hAdBUmDp8l2Ry_AhCdBdckB-dpuW2XgVRgDD3DXyX22jR7SfEkKSy8lem30Ye8rfXbNT&sig=AOD64_0FsITtK0IBFoVQnQ-nfQEgE8KdXQ&q&nis=4&adurl&ved=2ahUKEwjOnue8pLqIAxUkUGwGHe0LG7YQ0Qx6BAgbEAE"
                     className="lowercase hover:underline hover:text-yellow-200"
                   >
                     Museu Picasso Barcelona
@@ -93,7 +93,7 @@ const Footer = () => {
                 </li>
                 <li className="mb-4">
                   <a
-                    href="https://Channel9.id"
+                    href="https://www.michelangelofoundation.org/"
                     className="lowercase hover:underline hover:text-yellow-200"
                   >
                      The Michelangelo Foundation
@@ -101,7 +101,7 @@ const Footer = () => {
                 </li>
                 <li className="mb-4">
                   <a
-                    href="https://Goodstats.id"
+                    href="https://www.salvador-dali.org/es/"
                     className="lowercase hover:underline hover:text-yellow-200"
                   >
                     Fundació Gala-Salvador Dalí
@@ -109,7 +109,7 @@ const Footer = () => {
                 </li>
                 <li className="mb-4">
                   <a
-                    href="https://pusiknas.polri.go.id/"
+                    href="https://www.wikipedia.org/"
                     className="lowercase hover:underline hover:text-yellow-200"
                   >
                     Wikipedia
