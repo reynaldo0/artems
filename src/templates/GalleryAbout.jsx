@@ -66,7 +66,7 @@ const GalleryAbout = () => {
           <div className="relative w-full md:w-80 h-60 md:h-full overflow-hidden rounded-3xl group shadow" data-aos={isDesktop ? "fade-left" : "fade-up"} data-aos-duration="900">
             <img
               src={mainImage.src}
-              className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-105"
+              className="object-cover w-full h-full md:h-[510px] transition-transform duration-300 ease-in-out group-hover:scale-105"
               alt={mainImage.title}
               loading="lazy"
             />

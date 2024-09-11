@@ -26,9 +26,9 @@ const galleryAboutData = [
       "Dutch painter, generally considered the greatest after Rembrandt van Rijn, and one of the greatest of the Post-Impressionists.",
     born: "March 30, 1853",
     socialLinks: [
-      { icon: "Instagram", url: "https://instagram.com/vincent" },
-      { icon: "Linkedin", url: "https://linkedin.com/vincent" },
-      { icon: "Github", url: "https://vincentvangogh.com" },
+      { icon: "Instagram", url: "https://www.instagram.com/avlfarizi" },
+      { icon: "Linkedin", url: "https://www.linkedin.com/in/muhammad-salman-al-farisi-14a517324" },
+      { icon: "Github", url: "https://github.com/avlfarizi" },
     ],
   },
   {
@@ -38,16 +38,16 @@ const galleryAboutData = [
       { src: "/painters/pablo/gal2.png", title: "The Weeping Woman" },
     ],
     mainImage: {
-      src: "/painters/pablo/pablo.png",
+      src: "/about/aldo.jpeg",
       title: "Reynaldo Yusellino",
     },
     description:
       "A passionate and driven programmer from SMKN 46 Jakarta, with solid experience in web development and cybersecurity. Always eager to learn new things and never backs down from a challenge. Skilled in collaborating with teams to create highly interactive, dynamic, and fully responsive websites across all devices.",
     born: "June 07, 2007",
     socialLinks: [
-      { icon: "Instagram", url: "https://instagram.com/vincent" },
-      { icon: "Linkedin", url: "https://linkedin.com/vincent" },
-      { icon: "Github", url: "https://vincentvangogh.com" },
+      { icon: "Instagram", url: "https://www.instagram.com/rynldysllino" },
+      { icon: "Linkedin", url: "https://www.linkedin.com/in/reynaldo-yusellino-564724270" },
+      { icon: "Github", url: "https://github.com/reynaldo0" },
     ],
   },
 ];
