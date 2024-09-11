@@ -22,14 +22,14 @@ const Footer = () => {
               <ul className="font-medium text-white/60">
                 <li className="mb-4 flex items-center gap-3 text-base">
                   <ion-icon name="location"></ion-icon>
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline hover:text-yellow-200">
                     SMK Negeri 46 Jakarta
                   </a>
                 </li>
                 <li className="mb-4 flex items-center gap-3 text-base">
                   <ion-icon name="mail"></ion-icon>
-                  <a href="#" className="hover:underline">
-                    seniin@gmail.com
+                  <a href="#" className="hover:underline hover:text-yellow-200">
+                    artem@gmail.com
                   </a>
                 </li>
               </ul>
@@ -43,27 +43,27 @@ const Footer = () => {
               <ul className="font-medium text-white/60">
                 
                 <li className="mb-4">
-                  <Link to="/" className="hover:underline">
+                  <Link to="/" className="hover:underline hover:text-yellow-200">
                     Leonardo
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link to="/vincent" className="hover:underline">
+                  <Link to="/vincent" className="hover:underline hover:text-yellow-200">
                     Vincent
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link to="/pablo" className="hover:underline">
+                  <Link to="/pablo" className="hover:underline hover:text-yellow-200">
                     Pablo
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link to="/michaelangelo" className="hover:underline">
+                  <Link to="/michaelangelo" className="hover:underline hover:text-yellow-200">
                     Michelangelo
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link to="/dali" className="hover:underline">
+                  <Link to="/dali" className="hover:underline hover:text-yellow-200">
                     Salvador
                   </Link>
                 </li>
@@ -78,49 +78,41 @@ const Footer = () => {
                 <li className="mb-4">
                   <a
                     href="https://Detik.com"
-                    className="lowercase hover:underline"
+                    className="lowercase hover:underline hover:text-yellow-200"
                   >
-                    Detik.com
+                    Van Gogh Museum
                   </a>
                 </li>
                 <li className="mb-4">
                   <a
                     href="https://Kompasiana.com"
-                    className="lowercase hover:underline"
+                    className="lowercase hover:underline hover:text-yellow-200"
                   >
-                    Kompasiana
+                    Museu Picasso Barcelona
                   </a>
                 </li>
                 <li className="mb-4">
                   <a
                     href="https://Channel9.id"
-                    className="lowercase hover:underline"
+                    className="lowercase hover:underline hover:text-yellow-200"
                   >
-                    Channel9.id
+                     The Michelangelo Foundation
                   </a>
                 </li>
                 <li className="mb-4">
                   <a
                     href="https://Goodstats.id"
-                    className="lowercase hover:underline"
+                    className="lowercase hover:underline hover:text-yellow-200"
                   >
-                    Goodstats.id
+                    Fundació Gala-Salvador Dalí
                   </a>
                 </li>
                 <li className="mb-4">
                   <a
                     href="https://pusiknas.polri.go.id/"
-                    className="lowercase hover:underline"
+                    className="lowercase hover:underline hover:text-yellow-200"
                   >
-                    pusiknas.polri
-                  </a>
-                </li>
-                <li className="mb-4">
-                  <a
-                    href="https://www.haibunda.com/"
-                    className="lowercase hover:underline"
-                  >
-                    haibunda.com
+                    Wikipedia
                   </a>
                 </li>
               </ul>
@@ -133,10 +125,10 @@ const Footer = () => {
               <ul className="font-medium text-white/60">
                 <li className="mb-4">
                   <a
-                    href="https://www.freepik.com/"
-                    className="hover:underline"
+                    href="https://www.metmuseum.org/art/collection"
+                    className="hover:underline hover:text-yellow-200"
                   >
-                    Freepik
+                    The Met Collection
                   </a>
                 </li>
               </ul>
@@ -146,7 +138,7 @@ const Footer = () => {
         <hr className="my-6 border-white sm:mx-auto lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-center text-sm text-white/60">
-            Dibuat oleh tim Seni
+            Made by artem.
           </span>
         </div>
       </div>
