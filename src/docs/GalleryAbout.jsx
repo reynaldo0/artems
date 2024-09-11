@@ -6,7 +6,7 @@ const galleryAboutData = [
         { src: "/painters/leonardo/supper.png", title: "The Last Supper" }
       ],
       mainImage: { src: "/about/2.jpg", title: "Alifian Abdiel Rafif" },
-      description: "a Renaissance artist, inventor, and scientist who is widely regarded as one of the greatest minds in human history. He was born in the town of Vinci, Italy, and was the illegitimate son of a wealthy notary and a peasant woman.",
+      description: "a passionate programmer from SMKN 46 who thrives on exploring the dynamic world of JavaScript and cutting-edge technology. With a deep curiosity and a relentless drive for innovation,  efficient web applications and diving into the latest tech trends like AI, IoT etc. Combines technical expertise with a collaborative mindset, making a significant impact in every project. Driven by a commitment to continuous learning and a love for tech, my self is on a mission to shape the future of digital experiences.",
       born: "February 27, 2007",
       socialLinks: [
         { icon: "Instagram", url: "https://instagram.com/vincent" },
