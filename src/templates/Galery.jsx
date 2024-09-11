@@ -36,7 +36,7 @@ const Gallery = () => {
   }, [images, mainImage]);
 
   return (
-    <div className="relative max-w-screen-2xl mx-auto py-24 md:py-36 w-full flex flex-col items-center px-5">
+    <div className="relative max-w-screen-xl mx-auto py-24 md:py-36 w-full flex flex-col items-center px-5">
       <div className="grid grid-cols-1 md:grid-cols-2 w-full">
         <div
           className="flex md:flex-col gap-2 md:gap-8"
