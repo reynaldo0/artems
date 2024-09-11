@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { MapPin, Mail } from "lucide-react"; // Import the icons from lucide-react
+import { MapPin, Mail } from "lucide-react"; 
 
 const Footer = () => {
   return (
@@ -22,14 +22,14 @@ const Footer = () => {
               </h2>
               <ul className="font-medium text-white/60">
                 <li className="mb-4 flex items-center gap-3 text-base">
-                  <MapPin className="w-5 h-5" /> {/* Replace ion-icon with MapPin */}
-                  <a href="#" className="hover:underline hover:text-yellow-200">
+                  <MapPin className="w-5 h-5" /> 
+                  <a href="https://maps.app.goo.gl/omQk88rD3vdUdi6H6" className="hover:underline hover:text-yellow-200">
                     SMK Negeri 46 Jakarta
                   </a>
                 </li>
                 <li className="mb-4 flex items-center gap-3 text-base">
-                  <Mail className="w-5 h-5" /> {/* Replace ion-icon with Mail */}
-                  <a href="#" className="hover:underline hover:text-yellow-200">
+                  <Mail className="w-5 h-5" /> 
+                  <a href="mailto:artem@gmail.com?subject=Hello, thank you for reaching us, how can we help you?" className="hover:underline hover:text-yellow-200">
                     artem@gmail.com
                   </a>
                 </li>
@@ -138,7 +138,7 @@ const Footer = () => {
         <hr className="my-6 border-white sm:mx-auto lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-center text-sm text-white/60">
-            Made by artem.
+            Made by Artem.
           </span>
         </div>
       </div>
