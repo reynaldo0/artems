@@ -58,7 +58,7 @@ const VincentPaintings = [
     {
       year: "Saint-Rémy",
       title: "Hospital in Saint-Remy (1889)",
-      d9scription: "This painting was created during his stay at the Saint-Paul-de-Mausole asylum in Saint-Rémy, France. The painting depicts the hospital where Van Gogh was a patient for a year.",
+      description: "This painting was created during his stay at the Saint-Paul-de-Mausole asylum in Saint-Rémy, France. The painting depicts the hospital where Van Gogh was a patient for a year.",
       image: "/painters/vincent/saint/2.png",
     },
     {
@@ -83,7 +83,7 @@ const VincentPaintings = [
     {
       year: "Auvers-sur-Oise",
       title: "Daubigny's Garden (1890)",
-      d9scription: "This painting shows the garden of Charles-François Daubigny, a fellow artist who had lived in Auvers-sur-Oise before Van Gogh. It is a vibrant and colorful scene, with flowers, trees, and a small pond.",
+      description: "This painting shows the garden of Charles-François Daubigny, a fellow artist who had lived in Auvers-sur-Oise before Van Gogh. It is a vibrant and colorful scene, with flowers, trees, and a small pond.",
       image: "/painters/vincent/sur/2.png",
     },
     {

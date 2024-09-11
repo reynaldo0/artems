@@ -59,7 +59,7 @@ const LeonardoPaintings = [
   {
     year: "1490s",
     title: "La Belle Ferronnière (1490)",
-    d9scription: "La belle ferronnière is a name given to a portrait in The Louvre of a woman, usually attributed to Leonardo da Vinci. It is also known as Portrait of an Unknown Woman.",
+    description: "La belle ferronnière is a name given to a portrait in The Louvre of a woman, usually attributed to Leonardo da Vinci. It is also known as Portrait of an Unknown Woman.",
     image: "/painters/leonardo/1490/2.png",
   },
   {
@@ -84,7 +84,7 @@ const LeonardoPaintings = [
   {
     year: "1500s",
     title: "The Battle of Anghiari (1505)",
-    d9scription: "This paintings is usually referred to as Leonardo's Lost painting or \"the Lost Leonardo.\" It was painted around 1505 and represents the battle of Anghiari that took place in 1440.",
+    description: "This paintings is usually referred to as Leonardo's Lost painting or \"the Lost Leonardo.\" It was painted around 1505 and represents the battle of Anghiari that took place in 1440.",
     image: "/painters/leonardo/1500/2.png",
   },
   {

@@ -58,7 +58,7 @@ const DaliPaintings = [
     {
       year: "1950s",
       title: "Galatea of The Spheres (1952)",
-      d9scription: "The composition of the painting is intricate and detailed, with many smaller spheres contained within larger ones, almost like a planetary system. The painting is dreamlike and otherworldly, capturing the essence of Dali's unique artistic style.",
+      description: "The composition of the painting is intricate and detailed, with many smaller spheres contained within larger ones, almost like a planetary system. The painting is dreamlike and otherworldly, capturing the essence of Dali's unique artistic style.",
       image: "/painters/dali/1950/2.png",
     },
     {

@@ -65,7 +65,7 @@ const PabloPaintings = [
     {
       year: "Rose",
       title: "Garçon à la pipe (1905)",
-      d9scription: "The painting depicts a young boy wearing a wreath of flowers and holding a pipe in his left hand. The boy's attire is a mix of urban and rural styles, with a blue-and-white striped shirt and a garland of flowers around his neck.",
+      description: "The painting depicts a young boy wearing a wreath of flowers and holding a pipe in his left hand. The boy's attire is a mix of urban and rural styles, with a blue-and-white striped shirt and a garland of flowers around his neck.",
       image: "/painters/pablo/rose/2.png",
     },
     {
