@@ -24,7 +24,7 @@ const galleryAboutData = [
     mainImage: { src: "/about/1.jpg", title: "Muhammad Salman Alfarizi" },
     description:
       "Dutch painter, generally considered the greatest after Rembrandt van Rijn, and one of the greatest of the Post-Impressionists.",
-    born: "March 30, 1853",
+    born: "January 11, 2007",
     socialLinks: [
       { icon: "Instagram", url: "https://www.instagram.com/avlfarizi" },
       { icon: "Linkedin", url: "https://www.linkedin.com/in/muhammad-salman-al-farisi-14a517324" },
