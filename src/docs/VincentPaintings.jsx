@@ -8,7 +8,7 @@ const VincentPaintings = [
     {
       year: "paris",
       title: "Terrace of a Cafe on Montmartre (1886)",
-      description: "Description here...",
+      description: "The painting depicts a bustling scene at a popular cafe in Montmartre, a neighborhood in Paris known for its vibrant nightlife and bohemian culture.",
       image: "/painters/vincent/paris/2.png",
     },
     {
